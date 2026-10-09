@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 1: Iniciación | ESEIT - RETINHER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo-area">
+                <!-- NUEVO: Botón Hamburguesa para Móviles -->
+                <button id="mobile-menu-btn" class="hamburger-btn">☰</button>
+            
+                <div class="logo-icon">E</div>
+                <span class="logo-text">ESEIT <span class="fw-light">/ PMBOK</span></span>
+            </div>
+
+            <div class="nav-badges">
+                <span class="status-badge pulse">En Progreso</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <div class="hero-tags">
+                <span class="tag">Gerencia de Proyectos</span>
+                <span class="tag tag-outline">Especialización Big Data & Analitica de Datos</span>
+            </div>
+            <h1 class="hero-title">🛠️ Fase 1: Iniciación</h1>
+            <p class="hero-subtitle">Acta de constitución e identificación de interesados estratégicos del proyecto.</p>
+        </div>
+    </header>
+
+    <div class="container layout-grid">
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar-menu">
+            <div class="menu-sticky-wrapper">
+                <h3 class="menu-title">Navegación</h3>
+                <nav class="pill-nav">
+                    <!-- SECCIÓN GENERAL -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <!-- Este enlace te lleva a la página principal -->
+                            <a href="index.html" class="section-link">General</a>
+                            <!-- Este botón solo abre/cierra -->
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="index.html#intro" class="nav-pill">Introducción</a>
+                            <a href="index.html#presentacion" class="nav-pill active">Presentación y Equipo</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 1 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase1.html" class="section-link">Fase 1: Iniciación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase1.html#acta" class="nav-pill">Acta de Constitución</a>
+                            <a href="fase1.html#asignacion" class="nav-pill">Asignación de Roles</a>
+                            <a href="fase1.html#supuestos" class="nav-pill">Supuestos y Restricciones</a>
+                            <a href="fase1.html#interesados" class="nav-pill">Análisis de Interesados</a>
+                            <a href="fase1.html#comunicacion" class="nav-pill">Matriz de Poder y Estrategias de Comunicación</a>
+                            <a href="fase1.html#vision" class="nav-pill">Visión del Proyecto</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 2 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase2.html" class="section-link">Fase 2: Planeación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase2.html" class="nav-pill">Alcance, WBS y Cronograma</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 3 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase3.html" class="section-link">Fase 3: Ejecución</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase3.html" class="nav-pill">Ejecución e Impacto</a>
+                        </div>
+                    </div>
+                </nav>  
+            </div>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="content-area">
+            
+            <section id="acta" class="content-card">
+                <div class="card-header">
+                    <h2>Acta de Constitución</h2>
+                </div>
+
+                <div class="text-content">
+                    <h3>Contexto del Problema</h3>
+                    <p>
+                        RETINHER opera contratos bajo modalidad per cápita con Entidades Promotoras de Salud (EPS). En este modelo de contratación, la legalización y liquidación del ingreso depende de la presentación mensual de 
+                        los Registros Individuales de Prestación de Servicios de Salud (RIPS) articulados a la Factura Electrónica de Venta (FEV).
+                    </p>
+                    <p>
+                        Actualmente, el proceso se gestiona bajo un esquema de control reactivo y manual: la auditoría del pagador detecta omisiones demográficas, inconsistencias en codificación diagnóstica (CIE-10), incoherencias 
+                        con tecnologías en salud (CUPS/CUM) y discrepancias frente a la base censal contratada. Esto ocasiona retenciones masivas de cartera, elevados costos operativos en reprocesos manuales y riesgo de glosas y 
+                        sanciones contractuales.
+                    </p>
+                    <p>
+                        El proyecto justifica la adopción de principios de Gobierno del Dato, Pipelines ETL e Ingeniería Analítica para sustituir las revisiones manuales tardías por un modelo automatizado y preventivo que asegure 
+                        la calidad de la información desde su captura hasta su radicación formal ante el pagador
+                    </p>
+
+                    <h3>Objetivo General</h3>
+                    <p>
+                        Diseñar e implementar un sistema integral de aseguramiento y gobernanza de la calidad del dato (Data Quality Framework) para el ciclo de facturación y radicación de cuentas en RETINHER bajo modalidad de capitación, 
+                        mediante el modelado del ciclo de vida del dato y el desarrollo de un pipeline automatizado de validación y detección temprana de anomalías sobre la data asistencial, contractual y poblacional, con el propósito de 
+                        la consistencia multidimensional de la información RIPS/FEV, reducir a cero los errores internos prevenibles y mitigar el riesgo de devoluciones y glosas atribuibles a la institución.
+                    </p>
+
+                    <h3>Objetivos Específicos</h3>
+                    <p>
+                        <b>1.</b> Mapear el linaje y ciclo de vida del dato (Data Lineage): Caracterizar el flujo de información asistencial y administrativa desde la admisión hasta la generación de RIPS/FEV, identificando puntos críticos de degradación del dato.
+                    </p>
+                    <p>
+                        <b>2.</b> Modelar y priorizar los riesgos de calidad de la información: Cuantificar y categorizar los riesgos que generan glosas bajo las dimensiones de completitud, conformidad, consistencia lógica, unicidad y oportunidad.
+                    </p>
+                    <p>
+                        <b>3.</b> Desarrollar un motor de conciliación de población capitada (Record Linkage): Automatizar el cruce de las bases de datos maestras de afiliados de la EPS contra los registros asistenciales de RETINHER.
+                    </p>
+                    <p>
+                        <b>4.</b> Estructurar un repositorio de metadatos de condiciones contractuales: Centralizar las reglas de negocio (CUPS incluidos/excluidos, tarifas, topes) en un catálogo digital interoperable.
+                    </p>
+                    <p>
+                        <b>5.</b> Diseñar e implementar el pipeline validador Pre-RIPS/FEV: Construir un motor algorítmico de pre-auditoría de reglas cruzadas antes del empaquetado y envío formal a la EPS.
+                    </p>
+                    <p>
+                        <b>6.</b> Implementar tableros de control analítico (Business Intelligence): Visualizar indicadores de consistencia, tasa de glosas proyectadas y efectividad de radicación.
+                    </p>
+                    <p>
+                        <b>7.</b> Establecer un ciclo de analítica prescriptiva y mejora continua: Realimentar las reglas del motor a partir del aprendizaje y análisis de causas de glosas históricas.
+                    </p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Entregables</h3>
+                    <p>
+                        <b>Primer entregable (Mapeo integral de procesos y trazabilidad del dato):</b> Implementación de un modelo de Data Lineage que permita reconstruir y documentar de extremo a extremo el ciclo de vida de la información clínico-administrativa, 
+                        desde su captura y generación en los procesos asistenciales y administrativos, hasta su transformación, integración, consolidación y consumo en los procesos contables y de facturación. Este modelo comprenderá la identificación de 
+                        las fuentes de información, sistemas y aplicaciones involucradas, flujos de integración, estructuras y transformaciones de datos, reglas de negocio, dependencias tecnológicas, entradas y salidas de cada proceso y puntos de control. 
+                        Asimismo, permitirá localizar los puntos de quiebre o zonas de degradación del dato, donde puedan presentarse inconsistencias, pérdida de información, duplicidad, transformación no controlada o ausencia de trazabilidad.
+                        Con este desarrollo, se busca disponer de una visión integral y verificable del recorrido del dato dentro de la institución, estableciendo dónde se origina, cómo se transforma, por qué sistemas transita, dónde se utiliza y en qué 
+                        puntos se puede comprometer su calidad, integridad y confiabilidad. 
+                    </p>
+
+                    <p>
+                        <b>Segundo entregable (Matriz y modelo de gestión de riesgos de calidad del dato):</b> Implementación de un modelo integral para la identificación, clasificación, valoración y gestión de los riesgos asociados a la calidad de la información en 
+                        el proceso de facturación, tomando como referencia las dimensiones y principios establecidos en el marco DAMA-DMBOK. El desarrollo comprenderá la identificación y ponderación de los factores de riesgo que puedan afectar la confiabilidad 
+                        de la información, evaluando su probabilidad de ocurrencia y nivel de impacto financiero, operativo o contractual, particularmente frente a deficiencias de completitud, conformidad, consistencia, unicidad y oportunidad del dato. Para 
+                        cada riesgo identificado se establecerán sus causas, consecuencias, nivel de criticidad y puntos del proceso en los que puede materializarse.
+                        Asimismo, el modelo contemplará la definición y trazabilidad de los controles preventivos, detectivos y mitigantes requeridos a lo largo de la cadena operativa, permitiendo establecer mecanismos concretos para reducir la probabilidad de 
+                        ocurrencia de los riesgos, detectar oportunamente las desviaciones y mitigar sus efectos sobre la integridad de la información y los resultados del proceso de facturación.
+                        Con ello se busca disponer de una visión estructurada y cuantificable del riesgo asociado a la calidad del dato, que permita priorizar intervenciones, fortalecer los controles existentes y orientar acciones de mejora sobre aquellos puntos 
+                        de la cadena donde una deficiencia de información pueda generar mayores impactos financieros, operativos o contractuales.
+                    </p>
+
+                    <p>
+                        <b>Tercer entregable (Motor algorítmico de conciliación poblacional):</b> Desarrollar e implementar un motor algorítmico de conciliación poblacional (<i>Record Linkage Engine</i>) que permita ejecutar de forma automatizada y periódica el cruce masivo 
+                        entre las bases censales maestras de usuarios capitados suministradas por la EPS y los registros de atenciones asistenciales de RETINHER. Este motor comprenderá la aplicación de mecanismos de identificación, homologación y conciliación 
+                        de registros, orientados a detectar discrepancias en la información demográfica, pacientes no adscritos, duplicidades y registros huérfanos, así como otras inconsistencias que puedan afectar la correspondencia entre la población 
+                        contratada y los servicios efectivamente registrados. Con este desarrollo, se busca disponer de un mecanismo automatizado de control previo que permita identificar y gestionar oportunamente las inconsistencias poblacionales antes de 
+                        avanzar hacia la consolidación y generación de la factura.
+                    </p>
+
+                    <p>
+                        <b>Cuarto entregable (Catálogo digital de metadatos y reglas contractuales):</b> Desarrollar e implementar un catálogo digital de metadatos y reglas contractuales que permita centralizar, estructurar y estandarizar las condiciones establecidas en 
+                        los acuerdos de voluntades pactados con el pagador. Este catálogo comprenderá la parametrización de las tecnologías autorizadas mediante códigos CUPS, los medicamentos incluidos mediante códigos CUM, las exclusiones asociadas a la 
+                        modalidad de contratación per cápita, las tarifas vigentes, los topes operativos, las condiciones contractuales y los soportes documentales requeridos para la facturación. Asimismo, contemplará la organización de esta información 
+                        bajo un esquema de metadatos estructurado e interoperable, que permita su consulta y consumo directo por los diferentes motores analíticos y mecanismos automatizados de validación de la institución. Con este desarrollo, se busca 
+                        disponer de una fuente única, estandarizada y trazable de las condiciones contractuales que facilite su aplicación consistente durante los procesos de validación y facturación.
+                    </p>
+
+                    <p>
+                        <b>Quinto entregable (Pipeline automatizado de validación y detección temprana de anomalías Pre-RIPS/FEV):</b> Diseñar y desplegar un pipeline automatizado de validación y detección temprana de anomalías (<i>Pre-RIPS/FEV</i>) que opere 
+                        como una compuerta analítica de calidad previa al empaquetado y generación final de la factura. Este pipeline comprenderá la ejecución sistemática de reglas lógicas y cruces clínico-administrativos orientados a verificar la congruencia 
+                        entre diagnósticos CIE-10, procedimientos CUPS, rangos de edad, sexo y demás variables relevantes para la consistencia de los registros, así como la validación de su integridad estructural frente a los esquemas técnicos y condiciones 
+                        exigidas para la factura electrónica de venta en salud. Con este desarrollo, se busca identificar y gestionar de manera anticipada las inconsistencias, omisiones y anomalías presentes en los lotes de información, reduciendo la probabilidad 
+                        de devoluciones, rechazos y glosas asociadas a errores detectables antes de la radicación.
+                    </p>
+
+                    <p>
+                        <b>Sexto entregable (Tablero de control y analítica visual):</b> Desarrollar un tablero de control y analítica visual (<i>Business Intelligence Dashboard</i>) orientado al monitoreo integral del ciclo de facturación y de los principales indicadores 
+                        asociados a la calidad de los datos. Este tablero comprenderá la consolidación y visualización de indicadores relacionados con la consistencia de los lotes procesados, el índice integral de calidad del dato, las proyecciones de riesgo de glosa 
+                        técnica y la tasa de efectividad en la aceptación de cuentas durante la primera radicación ante la EPS, entre otros indicadores relevantes para la gestión del proceso. Asimismo, permitirá disponer de mecanismos de consulta, seguimiento y análisis 
+                        que faciliten la identificación de tendencias, desviaciones y puntos críticos a lo largo de la operación. Con este desarrollo, se busca proporcionar una herramienta de monitoreo y toma de decisiones que permita realizar seguimiento oportuno al desempeño 
+                        del proceso de facturación, anticipar riesgos y orientar acciones de mejora sobre la calidad de la información.
+                    </p>
+
+                    <p>
+                        <b>Séptimo entregable (Marco de mejora continua y analítica diagnóstica de glosas):</b> Desarrollar e implementar un marco metodológico y analítico de mejora continua que permita procesar y analizar los históricos de devoluciones, respuestas a objeciones y glosas 
+                        aplicadas por el asegurador, con el propósito de identificar patrones recurrentes, causas raíz y puntos de origen asociados a las inconsistencias detectadas durante el proceso de facturación. Este marco comprenderá mecanismos de retroalimentación 
+                        orientados a ajustar y calibrar progresivamente las reglas del motor de validación, así como la generación de directrices correctivas dirigidas a los procesos y puntos de origen del registro clínico y administrativo dentro de la institución. Con este 
+                        desarrollo, se busca establecer un ciclo permanente de aprendizaje y retroalimentación que permita transformar el comportamiento histórico de las glosas en conocimiento accionable, fortaleciendo los controles preventivos y reduciendo progresivamente 
+                        la recurrencia de errores que afectan la calidad de la información y la efectividad de la facturación.
+                    </p>
+
+                </div>
+            </section>
+
+            <section id="asignacion" class="content-card">
+                <div class="card-header">
+                    <h2>Equipo de Proyecto & Asignación de Roles</h2>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Interesado (Rol)</th>
+                                <th>Perfil/Especialidad</th>
+                                <th>Responsabilidades</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Líder de Analítica y Datos</strong></td>
+                                <td>Ingeniero Informático</td>
+                                <td>Dirección de la arquitectura técnica, modelado de bases de datos, desarrollo del pipeline ETL de validación, construcción del motor de conciliación y despliegue del tablero de control (BI)</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Líder Asistencial y Auditoría</strong></td>
+                                <td>Profesional de la Salud</td>
+                                <td>Modelado del proceso asistencial, codificación de reglas clínicas cruzadas (CIE-10 vs. CUPS), parametrización de condiciones contractuales per cápita, análisis de causas de glosas y diseño de controles preventivos.</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Sponsor Institucional</strong></td>
+                                <td>Gerente General RETINHER</td>
+                                <td>Validación estratégica, asignación de presupuesto, remoción de bloqueos organizacionales y aprobación formal de entregables</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Líder de Facturación y Cuentas Médicas</strong></td>
+                                <td>Facturador Senior RETINHER</td>
+                                <td>Suministro de bases históricas de glosas, definición de reglas operativas de liquidación y validación de las alertas del pre-validador.</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Líder de TI / Sistemas</strong></td>
+                                <td>Ingeniero de Sistemas / Administrador BD RETINHER</td>
+                                <td>Suministro de diccionarios de datos, concesión de accesos de lectura/réplicas y apoyo en el despliegue del pipeline sobre infraestructura local</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section id="supuestos" class="content-card">
+                <div class="card-header">
+                    <h2>Supuestos y Restricciones Iniciales</h2>
+                </div>
+                <div class="vision-statement">
+                    <p>El proyecto propuesto se basa en las siguientes premisas iniciales y restricciones operativas.</p>
+                </div>
+                <div class="text-content">
+                    <h3>Supuestos</h3>
+                    <p>
+                        <b>1.</b> Disponibilidad de acceso de solo lectura o esquemas de réplica de las bases de datos transaccionales de RETINHER (HIS y Facturación)
+                    </p>
+
+                    <p>
+                        <b>2.</b> Suministro periódico y oportuno de las bases maestras de población capitada por parte de la EPS contratante.
+                    </p>
+
+                    <p>
+                        <b>3.</b> Disponibilidad del historial consolidado de glosas, devoluciones y soportes del último semestre para el entrenamiento de reglas.
+                    </p>
+
+                    <p>
+                        <b>4.</b> Disposición colaborativa de las áreas asistenciales, facturación y sistemas para sesiones de trabajo
+                    </p>
+
+                    <h3>Restricciones</h3>
+                    <p>
+                        <b>1.</b> Temporal: Si bien el ciclo de vida del proyecto contempla un desarrollo integral de siete etapas, el alcance de la presente entrega se delimita estrictamente a las dos primeras fases en conformidad con la restricción temporal de la asignatura Gerencia de Proyectos (8 semanas).
+                    </p>
+
+                    <p>
+                        <b>2.</b> Presupuestal: Techo financiero ceñido a honorarios profesionales especializados y utilización de infraestructura tecnológica y servidores existentes en la IPS.
+
+                    <p>
+                        <b>3.</b> Seguridad y Privacidad: Cumplimiento irrestricto del marco legal de protección de datos sensibles en salud (Ley 1581 de 2012 y normativas de reserva de historia clínica), aplicando anonimización en entornos analíticos.
+                    </p>
+
+                    <p>
+                        <b>4.</b> Continuidad Operativa: El despliegue y pruebas del pipeline no interferirán con los tiempos de respuesta del software transaccional de producción.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section id="interesados" class="content-card">
+                <div class="card-header">
+                    <h2>Análisis de Interesados</h2>
+                </div>
+
+                <div class="vision-statement">
+                    <p>El rol de <strong>Equipo Consultor</strong> está constituido por los profesionales Sebastián Serna Valencia y Julián Patrón Avilés</p>
+                </div>
+
+
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Interesado/Cargo</th>
+                                <th>Tipo</th>
+                                <th>Expectativa</th>
+                                <th>Interés</th>
+                                <th>Poder</th>
+                                <th>Influencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Gerencia General</strong></td>
+                                <td>Interno</td>
+                                <td>Disminuir las glosas, asegurar el recaudo íntegro de la capitación y disponer de visibilidad analítica del negocio.</td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-high">Superior</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Equipo Consultor</strong></td>
+                                <td>Interno</td>
+                                <td>Desarrollar la arquitectura de datos, parametrizar las reglas de auditoría y entregar el sistema en los tiempos pactados</td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-high">Superior</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Auditoría Médica EPS</strong></td>
+                                <td>Externo</td>
+                                <td>Recibir RIPS/FEV consistentes, justificados epidemiológicamente y sin errores de cobertura contractual per cápita</td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alta</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Coordinación de Facturación</strong></td>
+                                <td>Interno</td>
+                                <td>Reducir reprocesos manuales, automatizar validaciones cruzadas y lograr radicaciones en primer intento.</td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-med">Medio</span></td>
+                                <td><span class="pill-badge badge-med">Media</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Dirección de Sistemas/TI</strong></td>
+                                <td></td>
+                                <td>Garantizar la integridad, seguridad y estabilidad de las bases de datos institucionales sin sobrecargas por procesos analíticos.</td>
+                                <td><span class="pill-badge badge-med">Medio</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alto</span></td>
+                                <td><span class="pill-badge badge-medhigh">Alta</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Personal Asistencial</strong></td>
+                                <td></td>
+                                <td>Disponer de interfaces claras que faciliten la codificación clínica sin incrementar tiempos muertos en consulta.</td>
+                                <td><span class="pill-badge badge-med">Medio</span></td>
+                                <td><span class="pill-badge badge-med">Medio</span></td>
+                                <td><span class="pill-badge badge-med">Media</span></td>
+                            </tr>
+                        </tbody>
+
+                        <tbody>
+                            <tr>
+                                <td><strong>Personal de Admisión</strong></td>
+                                <td></td>
+                                <td>Contar con validaciones automatizadas de afiliados para no admitir usuarios fuera de cobertura.</td>
+                                <td><span class="pill-badge badge-med">Medio</span></td>
+                                <td><span class="pill-badge badge-low">Bajo</span></td>
+                                <td><span class="pill-badge badge-low">Baja</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section id="comunicacion" class="content-card">
+                <div class="card-header">
+                    <h2>Matriz de Poder y Estrategias de Comunicación</h2>
+                    <p>
+                        A continuación, pueden ver nuestra matriz de poder vs. interés. Con base en la posición de los interesados que definimos aquí, hemos desarrollado la siguiente estrategia de comunicación
+                    </p>
+                </div>
+
+                <div class="image-container">
+                    <!-- Cambia "diagrama.png" por el nombre real de tu imagen -->
+                    <img src="poderv2.png" alt="Diagrama de Linaje de Datos" class="modern-image">
+                    <!-- Pie de foto (Opcional pero recomendado en entregas académicas) -->
+                    <p class="image-caption">Figura 1. MATRIZ PODER VS. INTERÉS.</p>
+                </div>
+
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Interesado</th>
+                                <th>Clasificación/Cuadrante</th>
+                                <th>Impacto en el Proyecto</th>
+                                <th>Estrategia de Comunicación</th>
+                                <th>Frecuencia</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Gerencia General</strong></td>
+                                <td><span class="pill-badge badge-high">Gestionar Atentamente</span></td>
+                                <td>Aprobación de recursos e implementación de directrices.</td>
+                                <td>Informes quincenales de avance, indicadores de ahorro proyectado y estado de hitos del cronograma.</td>
+                                <td>Quincenal</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Auditoría Médica EPS</strong></td>
+                                <td><span class="pill-badge badge-high">Gestionar Atentamente</span></td>
+                                <td>Validación y aceptación de la facturación radicada.</td>
+                                <td>Mesas de concertación técnica para alinear reglas de consistencia de RIPS y criterios de pertinencia per cápita.</td>
+                                <td>Mensual</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Dirección de Sistemas/TI</strong></td>
+                                <td><span class="pill-badge badge-med">Mantener Satisfecho</span></td>
+                                <td>Habilitación de réplicas de datos y despliegue del pipeline.</td>
+                                <td>Socialización de requerimientos de arquitectura, optimización de consultas SQL y acuerdos de seguridad.</td>
+                                <td>Semanal</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Coordinación de Facturación</strong></td>
+                                <td><span class="pill-badge badge-null">Mantener Informado</span></td>
+                                <td>Usuarios directos del validador y fuentes de casuística de glosa.</td>
+                                <td>Talleres de diseño de reglas de negocio, validación de alertas de pre-auditoría y capacitación operativa.</td>
+                                <td>Semanal</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Personal Asistencial</strong></td>
+                                <td><span class="pill-badge badge-null">Mantener Informado</span></td>
+                                <td>Generadores primarios del registro clínico asistencial.</td>
+                                <td>Capacitación focalizada en codificación diagnóstica (CIE-10/CUPS) y concienciación sobre el valor del dato.</td>
+                                <td>Quincenal</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Personal de Admisión</strong></td>
+                                <td><span class="pill-badge badge-low">Monitorear</span></td>
+                                <td>Captura inicial de datos de identidad y derechos.</td>
+                                <td>Guías rápidas de validación censal y reportes automáticos de incongruencias en documentos.</td>
+                                <td>Quincenal</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+
+            <section id="vision" class="content-card">
+                <div class="card-header">
+                    <h2>Visión del Proyecto</h2>
+                </div>
+                <div class="text-content">
+                    <strong>Contribución a los Objetivos Estratégicos:</strong> El proyecto actúa como una palanca directa para los pilares estratégicos de la institución, articulando el gobierno de datos con la estabilidad corporativa
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">💰</div>
+                        <div class="member-details">
+                            <h4>Sostenibilidad Financiera y Protección del Flujo de Fondos</h4>
+                            <p>
+                                Asegura el flujo de caja continuo bajo modalidad per cápita al erradicar las inconsistencias de datos que provocan retenciones de pago y glosas masivas por parte de las EPS
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">📈</div>
+                        <div class="member-details">
+                            <h4>Eficiencia Operacional y Transformación Digital</h4>
+                            <p>
+                                Reemplaza la auditoría manual y el uso de hojas de cálculo por un pipeline automatizado, reduciendo drásticamente los reprocesos y los sobrecostos administrativos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">✔</div>
+                        <div class="member-details">
+                            <h4>Excelencia Asistencial y Transparencia</h4>
+                            <p>
+                                Proporciona datos clínicos y epidemiológicos confiables que reflejan la morbilidad real de la población asignada, optimizando la asignación de recursos médicos.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🌇</div>
+                        <div class="member-details">
+                            <h4>Fortalecimiento del Gobierno Corporativo</h4>
+                            <p>
+                                Mejora la confianza contractual y técnica ante las EPS y los entes de control mediante el cumplimiento estricto de los estándares de calidad del dato.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="text-content">
+                    <strong>Beneficios Esperados:</strong> Los beneficios abarcan dimensiones económicas, técnicas y de gestión organizacional
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">💲</div>
+                        <div class="member-details">
+                            <h4>Económicos</h4>
+                            <p>
+                                Reducción esperada superior al 70% en glosas técnicas prevenibles, alcance del 75% de efectividad en primera radicación y protección del recaudo per cápita institucional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">⚙️</div>
+                        <div class="member-details">
+                            <h4>Operativos</h4>
+                            <p>
+                                Disminución del 65% en los tiempos de ensamble y revisión de lotes RIPS, acompañada de alertas de error en tiempo real previas a la generación de la factura electrónica.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">💻</div>
+                        <div class="member-details">
+                            <h4>Tecnológicos</h4>
+                            <p>
+                                Parametrización centralizada de reglas contractuales en una base de metadatos y despliegue de un tablero analítico (BI) para el monitoreo continuo de indicadores.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">🙋‍♂️</div>
+                        <div class="member-details">
+                            <h4>Culturales</h4>
+                            <p>
+                                Consolidación de una cultura institucional orientada al gobierno del dato, donde cada área se responsabiliza de la calidad del registro desde su punto de origen.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                 <div class="text-content">
+                    <strong>Impacto Social y Bienestar:</strong> El impacto de este proyecto no se restringe a métricas financieras; genera una transformación tangible en el bienestar, la calidad de vida y el clima laboral del equipo humano de RETINHER.
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">⚡</div>
+                        <div class="member-details">
+                            <h4>Mitigación del Estrés Laboral</h4>
+                            <p>
+                                Erradica las extenuantes jornadas de cierre mensual y el rastreo manual de errores registro por registro, mitigando la sobrecarga psicológica en los equipos de facturación y auditoría.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">🎓</div>
+                        <div class="member-details">
+                            <h4>Cualificación del Talento Humano</h4>
+                            <p>
+                                El personal administrativo evoluciona de tareas repetitivas de corrección y gestión de planillas hacia roles estratégicos de análisis de datos y control preventivo.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">💼</div>
+                        <div class="member-details">
+                            <h4>Mejora del Clima Organizacional</h4>
+                            <p>
+                                La estandarización y automatización de los procesos reduce fricciones entre las áreas asistenciales y adminitrativa, fortaleciendo la colaboración, transparecia y la confianza organizacional.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">👥</div>
+                        <div class="member-details">
+                            <h4>Impacto Indirecto en el Usuario</h4>
+                            <p>
+                                Evita retrasos en la atención o negación injustificada de servicios al garantizar censos de afiliados limpios y permite al personal de salud reconcentrarse en la atención clínica humanizada.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+            </section>
+
+        </main>
+    </div>
+    
+    <script>
+        // 1. Lógica para el botón (+ / -)
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault(); // Evita cualquier comportamiento por defecto
+            
+                // Busca el contenedor '.nav-items' que está justo después del '.section-header'
+                const navItems = this.closest('.section-header').nextElementSibling;
+                const icon = this.querySelector('.toggle-icon');
+
+                // Alterna la visibilidad
+                navItems.classList.toggle('collapsed');
+
+                // Cambia el ícono
+                if (navItems.classList.contains('collapsed')) {
+                    icon.textContent = '+';
+                } else {
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // 2. Lógica para las Píldoras (Enlaces activos dentro de la misma página)
+        const navPills = document.querySelectorAll('.nav-pill');
+
+        navPills.forEach(pill => {
+            pill.addEventListener('click', function() {
+                if(!this.classList.contains('disabled')) {
+                    navPills.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // 3. Lógica para el Menú Hamburguesa en Móviles
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebarMenu = document.querySelector('.sidebar-menu');
+
+        if (mobileMenuBtn && sidebarMenu) {
+            // Abrir/Cerrar menú al tocar el botón ☰
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebarMenu.classList.toggle('active');
+            });
+
+            // Opcional pero recomendado: Cerrar el menú móvil automáticamente al elegir una opción
+            const allMobileLinks = document.querySelectorAll('.nav-pill, .section-link');
+            allMobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Solo si estamos en versión móvil (ancho menor a 900px)
+                    if(window.innerWidth <= 900) {
+                        sidebarMenu.classList.remove('active');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>

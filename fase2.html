@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2: Planeación | ESEIT - RETINHER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo-area">
+                <!-- NUEVO: Botón Hamburguesa para Móviles -->
+                <button id="mobile-menu-btn" class="hamburger-btn">☰</button>
+            
+                <div class="logo-icon">E</div>
+                <span class="logo-text">ESEIT <span class="fw-light">/ PMBOK</span></span>
+            </div>
+            <div class="nav-badges">
+                <span class="status-badge pulse">En Progreso</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Fase 2: Planeación</h1>
+            <p class="hero-subtitle">Estructura de Desglose de Trabajo (WBS), Cronograma y Gestión de Riesgos.</p>
+        </div>
+    </header>
+
+    <div class="container layout-grid">
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar-menu">
+            <div class="menu-sticky-wrapper">
+                <h3 class="menu-title">Navegación</h3>
+                <nav class="pill-nav">
+                    <!-- SECCIÓN GENERAL -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <!-- Este enlace te lleva a la página principal -->
+                            <a href="index.html" class="section-link">General</a>
+                            <!-- Este botón solo abre/cierra -->
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="index.html#intro" class="nav-pill">Introducción</a>
+                            <a href="index.html#presentacion" class="nav-pill active">Presentación y Equipo</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 1 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase1.html" class="section-link">Fase 1: Iniciación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase1.html#acta" class="nav-pill">Acta de Constitución</a>
+                            <a href="fase1.html#asignacion" class="nav-pill">Asignación de Roles</a>
+                            <a href="fase1.html#supuestos" class="nav-pill">Supuestos y Restricciones</a>
+                            <a href="fase1.html#interesados" class="nav-pill">Análisis de Interesados</a>
+                            <a href="fase1.html#comunicacion" class="nav-pill">Matriz de Poder y Estrategias de Comunicación</a>
+                            <a href="fase1.html#vision" class="nav-pill">Visión del Proyecto</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 2 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase2.html" class="section-link">Fase 2: Planeación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase2.html" class="nav-pill">Alcance, WBS y Cronograma</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 3 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase3.html" class="section-link">Fase 3: Ejecución</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase3.html" class="nav-pill">Ejecución e Impacto</a>
+                        </div>
+                    </div>
+                </nav>  
+            </div>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="content-area">
+            <section class="content-card">
+                <div class="card-header">
+                    <h2>!!! Sección en construcción !!!</h2>
+                    <p class="text-muted">Espacio reservado para la asignación de la semana 6.</p>
+                </div>
+                <div class="image-container">
+                    <!-- Cambia "diagrama.png" por el nombre real de tu imagen -->
+                    <img src="nodisponible.png" alt="Diagrama de Linaje de Datos" class="modern-image">
+                    <!-- Pie de foto (Opcional pero recomendado en entregas académicas) -->
+                    <p class="image-caption">Figura 1. Sección en construcción.</p>
+                </div>
+            </section>
+        </main>
+
+
+    </div>
+
+
+    <script>
+        // 1. Lógica para el botón (+ / -)
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault(); // Evita cualquier comportamiento por defecto
+            
+                // Busca el contenedor '.nav-items' que está justo después del '.section-header'
+                const navItems = this.closest('.section-header').nextElementSibling;
+                const icon = this.querySelector('.toggle-icon');
+
+                // Alterna la visibilidad
+                navItems.classList.toggle('collapsed');
+
+                // Cambia el ícono
+                if (navItems.classList.contains('collapsed')) {
+                    icon.textContent = '+';
+                } else {
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // 2. Lógica para las Píldoras (Enlaces activos dentro de la misma página)
+        const navPills = document.querySelectorAll('.nav-pill');
+
+        navPills.forEach(pill => {
+            pill.addEventListener('click', function() {
+                if(!this.classList.contains('disabled')) {
+                    navPills.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // 3. Lógica para el Menú Hamburguesa en Móviles
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebarMenu = document.querySelector('.sidebar-menu');
+
+        if (mobileMenuBtn && sidebarMenu) {
+            // Abrir/Cerrar menú al tocar el botón ☰
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebarMenu.classList.toggle('active');
+            });
+
+            // Opcional pero recomendado: Cerrar el menú móvil automáticamente al elegir una opción
+            const allMobileLinks = document.querySelectorAll('.nav-pill, .section-link');
+            allMobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Solo si estamos en versión móvil (ancho menor a 900px)
+                    if(window.innerWidth <= 900) {
+                        sidebarMenu.classList.remove('active');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
