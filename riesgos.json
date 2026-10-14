@@ -1,0 +1,113 @@
+{
+  "escala": {
+    "Bajo": "1–5",
+    "Medio": "6–12",
+    "Alto": "13–25"
+  },
+  "riesgos": [
+    {
+      "id": "RSG-01",
+      "riesgo": "Degradación del rendimiento en software de producción (HIS)",
+      "categoria": "Técnico / Infraestructura",
+      "causa": "Extracción masiva de consultas para el pipeline sobre el motor transaccional",
+      "probabilidad": 2,
+      "impacto": 4,
+      "severidad": 8,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Desacoplamiento arquitectural: extracción sobre réplica de solo lectura y procesos ETL nocturnos fuera de horario asistencial",
+      "contingencia": "Desconectar el pipeline de la red local y procesar validaciones mediante volcados en archivos planos comprimidos (CSV/Parquet)"
+    },
+    {
+      "id": "RSG-02",
+      "riesgo": "Resistencia médica al registro estandarizado en historia clínica",
+      "categoria": "Humano / Operativo",
+      "causa": "Percepción de sobrecarga administrativa en la codificación diagnóstica (CIE-10 / CUPS)",
+      "probabilidad": 3,
+      "impacto": 4,
+      "severidad": 12,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Talleres de sensibilización sobre impacto financiero;  creación de plantillas rápidas y catálogos favoritos en el HIS",
+      "contingencia": "Intervención formal de la Dirección Médica estableciendo obligatoriedad del dato para auditoría interna de historias clínicas"
+    },
+    {
+      "id": "RSG-03",
+      "riesgo": "Retraso en la entrega mensual de bases de afiliados por la EPS",
+      "categoria": "Externo / Contractual",
+      "causa": "Desfases operativos o cierres tardíos en las plataformas del pagador durante el primer trimestre del año",
+      "probabilidad": 4,
+      "impacto": 4,
+      "severidad": 16,
+      "nivel": "Alto",
+      "estrategia": "Mitigar",
+      "preventivo": "Formalización de acuerdo de intercambio seguro de datos con SLA estricto de entrega dentro de los primeros 3 días del mes",
+      "contingencia": "Utilizar transitoriamente como base de conciliación censal la última base validada más el histórico de novedades reportadas"
+    },
+    {
+      "id": "RSG-04",
+      "riesgo": "Impacto en el cronograma por la ventana de feriados de fin de año y Semana Santa",
+      "categoria": "Cronograma / Calendario",
+      "causa": "Disminución de disponibilidad del personal institucional entre el 24 de dic y el 11 de ene, y durante Semana Santa (marzo 2027)",
+      "probabilidad": 4,
+      "impacto": 3,
+      "severidad": 12,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Calendario oficial con días no laborables ya descontados;  asignación de tareas técnicas de desarrollo autónomo en esos periodos",
+      "contingencia": "Reprogramación interna de tareas no críticas sin modificar la fecha de entrega de hitos mayores"
+    },
+    {
+      "id": "RSG-05",
+      "riesgo": "Modificaciones regulatorias imprevistas en lineamientos RIPS/FEV",
+      "categoria": "Normativo / Legal",
+      "causa": "Expedición de nuevas resoluciones o ajustes a esquemas XML/JSON por parte del Ministerio de Salud",
+      "probabilidad": 3,
+      "impacto": 5,
+      "severidad": 15,
+      "nivel": "Alto",
+      "estrategia": "Mitigar",
+      "preventivo": "Arquitectura desacoplada: las reglas sintácticas y de estructura se administran en tablas maestras de metadatos, no en código fuente",
+      "contingencia": "Actualizar únicamente la tabla de metadatos de validación sin reescribir la lógica base del motor de auditoría"
+    },
+    {
+      "id": "RSG-06",
+      "riesgo": "Vulneración de confidencialidad o fuga de datos sensibles de salud",
+      "categoria": "Legal / Seguridad",
+      "causa": "Extracción y prueba de datos asistenciales sin anonimización adecuada durante el modelado analítico",
+      "probabilidad": 1,
+      "impacto": 5,
+      "severidad": 5,
+      "nivel": "Bajo",
+      "estrategia": "Evitar",
+      "preventivo": "Protocolo estricto de enmascaramiento, tokenización y hashing de documentos de identidad de pacientes bajo Ley 1581",
+      "contingencia": "Aislamiento inmediato de los repositorios de datos analíticos, informe al Oficial de Privacidad y auditoría forense"
+    },
+    {
+      "id": "RSG-07",
+      "riesgo": "Elevada tasa de falsos positivos en el motor de reglas cruzadas",
+      "categoria": "Calidad Técnica",
+      "causa": "Reglas lógicas excesivamente restrictivas que objetan atenciones clínicas atípicas pero pertinentes",
+      "probabilidad": 3,
+      "impacto": 3,
+      "severidad": 9,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Parametrización y calibración técnica liderada de forma directa por el especialista en auditoría médica",
+      "contingencia": "Incorporación de una compuerta de excepción facultativa justificada firmada electrónicamente por el auditor médico institucional"
+    },
+    {
+      "id": "RSG-08",
+      "riesgo": "Ruptura u omisión en la adopción del marco de mejora continua (Paquete 1.6.4)",
+      "categoria": "Procesos / Gestión Calidad",
+      "causa": "Falta de registro sistemático de las respuestas y motivos reales de glosa emitidos por la EPS",
+      "probabilidad": 3,
+      "impacto": 4,
+      "severidad": 12,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Estandarización de una interfaz simplificada para el cargue y categorización de glosas al cierre de cada radicación mensual",
+      "contingencia": "Institucionalización de un Comité Quincenal de Calidad del Dato con asistencia obligatoria de Facturación, Auditoría y Sistemas"
+    }
+  ]
+}

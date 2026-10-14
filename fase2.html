@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fase 2: Planeación | ESEIT - RETINHER</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <nav class="glass-nav">
         <div class="nav-content">
             <div class="logo-area">
                 <!-- NUEVO: Botón Hamburguesa para Móviles -->
                 <button id="mobile-menu-btn" class="hamburger-btn">☰</button>
-            
+
                 <div class="logo-icon">E</div>
                 <span class="logo-text">ESEIT <span class="fw-light">/ PMBOK</span></span>
             </div>
@@ -25,7 +28,7 @@
 
     <header class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Fase 2: Planeación</h1>
+            <h1 class="hero-title">🕑 Fase 2: Planeación</h1>
             <p class="hero-subtitle">Estructura de Desglose de Trabajo (WBS), Cronograma y Gestión de Riesgos.</p>
         </div>
     </header>
@@ -61,7 +64,8 @@
                             <a href="fase1.html#asignacion" class="nav-pill">Asignación de Roles</a>
                             <a href="fase1.html#supuestos" class="nav-pill">Supuestos y Restricciones</a>
                             <a href="fase1.html#interesados" class="nav-pill">Análisis de Interesados</a>
-                            <a href="fase1.html#comunicacion" class="nav-pill">Matriz de Poder y Estrategias de Comunicación</a>
+                            <a href="fase1.html#comunicacion" class="nav-pill">Matriz de Poder y Estrategias de
+                                Comunicación</a>
                             <a href="fase1.html#vision" class="nav-pill">Visión del Proyecto</a>
                         </div>
                     </div>
@@ -73,7 +77,11 @@
                             <button class="toggle-btn"><span class="toggle-icon">-</span></button>
                         </div>
                         <div class="nav-items">
-                            <a href="fase2.html" class="nav-pill">Alcance, WBS y Cronograma</a>
+                            <a href="fase2.html#alcance" class="nav-pill">Alcance del Proyecto</a>
+                            <a href="fase2.html#wbs" class="nav-pill">Work Breakdown Structure(WBS)</a>
+                            <a href="fase2.html#cronograma" class="nav-pill">Cronograma y Diagrama de Gantt</a>
+                            <a href="fase2.html#presupuesto" class="nav-pill">Presupuestos</a>
+                            <a href="fase2.html#matriz-riesgos" class="nav-pill">Gestión de Riesgos</a>
                         </div>
                     </div>
 
@@ -87,38 +95,618 @@
                             <a href="fase3.html" class="nav-pill">Ejecución e Impacto</a>
                         </div>
                     </div>
-                </nav>  
+                </nav>
             </div>
         </aside>
 
         <!-- CONTENIDO -->
         <main class="content-area">
-            <section class="content-card">
+            <section id="alcance" class="content-card">
                 <div class="card-header">
-                    <h2>!!! Sección en construcción !!!</h2>
-                    <p class="text-muted">Espacio reservado para la asignación de la semana 6.</p>
+                    <h2>Alcance del Proyecto</h2>
+                    <p class="text-muted">Project Scope Statement</p>
                 </div>
-                <div class="image-container">
-                    <!-- Cambia "diagrama.png" por el nombre real de tu imagen -->
-                    <img src="nodisponible.png" alt="Diagrama de Linaje de Datos" class="modern-image">
-                    <!-- Pie de foto (Opcional pero recomendado en entregas académicas) -->
-                    <p class="image-caption">Figura 1. Sección en construcción.</p>
+                <div class="text-content">
+                    <h3>Descripción del Alcance del Producto</h3>
+                    <p>
+                        El producto final del proyecto consiste en un sistema integral de aseguramiento analítico y
+                        gobernanza de la calidad del dato (Data Quality Framework) articulado al ciclo de facturación y
+                        radicación de cuentas en
+                        RETINHER bajo modalidad de capitación. Comprende el diseño del linaje del dato
+                        clínico-financiero, una taxonomía de riesgos de información bajo el estándar DAMA-DMBOK, un
+                        repositorio digital de metadatos contractuales,
+                        un motor algorítmico de conciliación poblacional (Record Linkage), un pipeline de pre-auditoría
+                        automatizado para la validación previa de RIPS/FEV, un tablero de control (Business
+                        Intelligence) y un marco
+                        metodológico de mejora continua alimentado por la analítica diagnóstica de glosas.
+                    </p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Criterios de Aceptación</h3>
+                    <p>
+                        <strong>Completitud y Conformidad Sintáctica:</strong> El motor de validación debe verificar el
+                        100% de los campos obligatorios y estructuras exigidas por los anexos técnicos normativos de
+                        RIPS/FEV antes de habilitar la opción de radicación.
+                    </p>
+
+                    <p>
+                        <strong>Consistencia Clínica Cruzada:</strong> El sistema debe contrastar y validar la
+                        coherencia diagnóstica (CIE-10 principal y secundario) frente a tecnologías y procedimientos
+                        (códigos CUPS y CUM) sin emitir falsos positivos en más de un 2% de los casos analizados.
+                    </p>
+
+                    <p>
+                        <strong>Conciliación Censal:</strong> La tasa de coincidencia en el cruce automatizado entre las
+                        bases maestras de afiliados de la EPS y los registros de atenciones debe operar con un nivel de
+                        asertividad del 99% mediante algoritmos determinísticos y probabilísticos.
+                    </p>
+
+                    <p>
+                        <strong>Rendimiento Computacional:</strong> El pipeline de pre-auditoría no debe generar
+                        bloqueos ni degradar los tiempos de respuesta del sistema transaccional de producción (HIS/ERP),
+                        procesando lotes de al menos 10.000 atenciones en menos de 15 minutos en el entorno desacoplado.
+                    </p>
+
+                    <p>
+                        <strong>Aprobación Multidisciplinar:</strong> Validación y firma formal de conformidad técnica
+                        por parte de la Dirección de Sistemas/TI y de conformidad clínico-operativa por parte de la
+                        Coordinación de Facturación y Auditoría Médica de RETINHER.
+                    </p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Limite del Proyecto (Inclusiones)</h3>
+                    <p>
+                        <strong>•</strong> Levantamiento y mapeo exhaustivo del flujo del dato (Data Lineage) desde
+                        admisión y registro médico en historia clínica hasta la consolidación contable y generación de
+                        archivos RIPS/FEV.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Construcción de la matriz y taxonomía de riesgos de calidad del dato
+                        (completitud, validez, unicidad, consistencia lógica y oportunidad) para facturación per cápita.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Algoritmo de conciliación masiva (Record Linkage) entre la base de datos de
+                        usuarios de la EPS y las atenciones de RETINHER.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Diseño y carga de un catálogo digital de metadatos contractuales (tecnologías
+                        incluidas, excluidas, topes per cápita y soportes documentales).
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Pipeline programado (scripts de reglas de validación en Python/SQL) para
+                        auditar lotes de RIPS/FEV previos a su radicación.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Tablero analítico interactivo en Power BI / Metabase para el monitoreo de
+                        indicadores de calidad del dato, efectividad de radicación y riesgo proyectado de glosas.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Protocolo formal de calibración continua y realimentación analítica de causas
+                        de glosas históricas.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Documentación técnica y funcional, guías operativas y talleres de
+                        socialización para el equipo institucional.
+                    </p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Limite del Proyecto (Exclusiones)</h3>
+                    <p>
+                        <strong>•</strong> Desarrollo o sustitución del software transaccional hospitalario existente
+                        (HIS), ERP contable o módulo de historia clínica de RETINHER.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Rediseño de la infraestructura física de servidores, redes de
+                        telecomunicaciones o cableado de la institución.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Intervención o negociación directa de tarifas, paquetes per cápita o
+                        cláusulas legales de los acuerdos de voluntades con las EPS.
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Gestión operativa diaria de radicación de facturas o radicación de respuestas
+                        a glosas ante las EPS (responsabilidad permanente del departamento de facturación
+                        institucional).
+                    </p>
+
+                    <p>
+                        <strong>•</strong> Compra o licenciamiento de software comercial privativo de facturación o
+                        bases de datos de pago por uso (se empleará infraestructura in-house y herramientas Open
+                        Source).
+                    </p>
                 </div>
             </section>
+
+            <section id="wbs" class="content-card">
+                <div class="card-header">
+                    <h2>Work Breakdown Structure</h2>
+                    <p class="text-muted">(WBS)</p>
+                </div>
+                <div class="text-content">
+                    <h3>Diagrama de Flujo</h3>
+                    <p>
+                        A través del siguiente <a
+                            href="https://campuseseit-my.sharepoint.com/:u:/g/personal/ssernav_alumnoeseit_edu_co/IQD_lPDkImPaQ5snrcEWlQDsARekPOy5mTlStY_Ph15mH6Y?e=QOeNpP"
+                            target="_blank" title="Diagrama de Flujo">enlace</a>,
+                        se presenta el diagrama de flujo correspondiente al desglose detallado de la Estructura de
+                        Desglose del Trabajo (EDT / WBS).
+                    </p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Diccionario de la WBS</h3>
+                    <p>
+                        Una vez analizado el diagrama de flujo correspondiente a la Estructura de Desglose del Trabajo
+                        (EDT/WBS), se procede a presentar el Diccionario de la WBS. En este se describen de manera
+                        sistemática los componentes que conforman cada paquete de trabajo, incluyendo su alcance,
+                        actividades asociadas, entregables y demás elementos relevantes para su adecuada identificación,
+                        comprensión y seguimiento durante la ejecución del proyecto. La siguiente tabla consolida esta
+                        información y facilita la
+                        interpretación de las responsabilidades y los resultados esperados en cada componente de la
+                        EDT/WBS.
+                    </p>
+                </div>
+
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Paquete</th>
+                                <th>Descripción</th>
+                                <th>Entregable Asociado</th>
+                                <th>Responsable</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>[1.2.3]</strong> Data Lineage</td>
+                                <td>Levantamiento de diagramas de flujo de datos (DFD) que ilustran el ciclo del dato
+                                    desde la admisión del usuario, pasando por el software asistencial y la base de
+                                    datos SQL, hasta la extracción contable de facturación.</td>
+                                <td>Primer entregable.</td>
+                                <td>Líder de Analítica e Ingeniería de Datos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.3.4]</strong> Consolidación de Matriz de Riesgos</td>
+                                <td>Evaluación cualitativa y cuantitativa de fallas de completitud, congruencia y
+                                    validez de los datos de salud, asignando niveles de severidad y planes de respuesta
+                                    preventivos.</td>
+                                <td>Segundo entregable.</td>
+                                <td>Líder de Auditoría Médica y Procesos Clínicos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.4.3]</strong> Desarrollo del Algoritmo de Record Linkage</td>
+                                <td>Programación del script de homologación y cruce automático entre el censo oficial de
+                                    afiliados de la EPS y la tabla de usuarios registrados en el HIS de RETINHER.</td>
+                                <td>Tercer entregable.</td>
+                                <td>Líder de Analítica e Ingeniería de Datos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.4.2]</strong> Parametrización de Metadatos Contractuales</td>
+                                <td>Codificación y carga estructurada de los catálogos CUPS autorizados, medicamentos
+                                    per cápita, servicios excluidos y soportes exigidos contractualmente</td>
+                                <td>Cuarto entregable.</td>
+                                <td>Líder de Auditoría Médica y Procesos Clínicos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.5.2]</strong> Motor de Reglas Clínicas Cruzadas</td>
+                                <td>Codificación algorítmica de reglas lógicas que cotejan diagnósticos CIE-10
+                                    principales y secundarios contra procedimientos CUPS, edad, sexo y pertinencia
+                                    médica.</td>
+                                <td>Quinto entregable.</td>
+                                <td>Equipo Consultor</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.6.2]</strong> Despliegue del Dashboard Analítico</td>
+                                <td>Configuración de vistas analíticas interactivas para el monitoreo del Data Quality
+                                    Index (DQI), tasa de errores detectados y proyección de cartera glosable</td>
+                                <td>Sexto entregable.</td>
+                                <td>Líder de Analítica e Ingeniería de Datos</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>[1.6.4]</strong> Marco de mejora continua</td>
+                                <td>Implementación de mecanismos de retroalimentación, directrices correctivas,
+                                    aprendizaje y retroalimentación. fortalecimiento de controles preventivos y redución
+                                    de errores</td>
+                                <td>Septimo entregable.</td>
+                                <td>Líder de Auditoría Médica y Procesos Clínicos</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-card" id="cronograma">
+                <div class="card-header">
+                    <h2>Cronograma y Diagrama de Gantt</h2>
+                    <p class="text-muted" id="crono-resumen">Cargando cronograma…</p>
+                </div>
+
+                <div class="gantt-filters" role="group" aria-label="Filtrar por responsable">
+                    <button type="button" class="gantt-filter is-active" data-filter="todos"
+                        aria-pressed="true">Todos</button>
+                    <button type="button" class="gantt-filter" data-filter="cogerentes" data-resp="cogerentes"
+                        aria-pressed="false">Equipo Consultor</button>
+                    <button type="button" class="gantt-filter" data-filter="auditoria" data-resp="auditoria"
+                        aria-pressed="false">Auditoría Médica</button>
+                    <button type="button" class="gantt-filter" data-filter="analitica" data-resp="analitica"
+                        aria-pressed="false">Analitica e Ingeniería de Datos</button>
+                </div>
+                <p class="gantt-status small-text text-muted" id="gantt-status" role="status" aria-live="polite"></p>
+
+
+                <h3 class="gantt-subtitle">Detalle del cronograma</h3>
+                <div class="table-container crono-tabla-wrap" id="crono-tabla-wrap">
+                    <table class="modern-table" id="crono-tabla">
+                        <thead>
+                            <tr>
+                                <th>Código</th>
+                                <th>Actividad / Hito</th>
+                                <th>Responsable</th>
+                                <th>Inicio</th>
+                                <th>Fin</th>
+                                <th>Días háb.</th>
+                                <th>Semanas</th>
+                                <th>Predecesoras</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="gantt-scroll gantt-after table-container" id="gantt-scroll" tabindex="0"
+                    aria-label="Diagrama de Gantt, desplazable horizontalmente">
+                    <div class="gantt" id="gantt"></div>
+                </div>
+                <div class="gantt-tooltip" id="gantt-tooltip" role="tooltip" hidden></div>
+
+                <div class="gantt-legend small-text text-muted" aria-hidden="true">
+                    <span><i class="gantt-dot gantt-dot--cogerentes"></i>Equipo Consultor</span>
+                    <span><i class="gantt-dot gantt-dot--auditoria"></i>Auditoría Médica</span>
+                    <span><i class="gantt-dot gantt-dot--analitica"></i>Analitica e Ingeniería de Datos</span>
+                    <span><i class="gantt-diamond"></i>Hito</span>
+                    <span><i class="gantt-swatch-holiday"></i>Festivo</span>
+                </div>
+                <noscript>
+                    <p class="text-muted">Se requiere JavaScript para mostrar el cronograma.</p>
+                </noscript>
+            </section>
+
+            <section class="content-card" id="presupuesto">
+                <div class="card-header">
+                    <h2>Presupuesto del Proyecto</h2>
+                    <p class="text-muted" id="crono-resumen">Estructurado bajo tarifas estándar de consultoría
+                        especializada en gestión de proyectos, analítica de datos y auditoría médica para un ciclo de 25
+                        semanas de gerencia</p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Infraestructura y Gastos Directos Operativos</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Especificación</th>
+                                <th>Mecanismo</th>
+                                <th>Costo (COP)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Infraestructura de Servidores y Almacenamiento</td>
+                                <td>Servidor de base de datos SQL para réplicas y ejecución de pipelines batch</td>
+                                <td>Aportado por RETINHER IPS (Capacidad instalada)</td>
+                                <td>$0 (In-house)</td>
+                            </tr>
+
+                            <tr>
+                                <td>Herramientas de Desarrollo y Stack Analítico</td>
+                                <td>Python 3.11, librerías Pandas/SQLAlchemy, Metabase / Power BI Desktop.</td>
+                                <td>Licenciamiento Community / Open Source.</td>
+                                <td>$0 (Open Source)</td>
+                            </tr>
+
+                            <tr>
+                                <td>Insumos, Papelería y Documentación Operativa</td>
+                                <td>Producción de manuales operativos, guías de registro clínico y material técnico.
+                                </td>
+                                <td>Compra directa.</td>
+                                <td>$1.500.000</td>
+                            </tr>
+
+                            <tr>
+                                <td>Talleres de Co-diseño, Socialización y Cierre</td>
+                                <td>Logística para 5 sesiones de trabajo interdepartamental y taller de cierre.</td>
+                                <td>Ejecución directa del proyecto.</td>
+                                <td>$1.200.000</td>
+                            </tr>
+
+                            <tr>
+                                <td>SUBTOTAL GASTOS DIRECTOS:</td>
+                                <td></td>
+                                <td></td>
+                                <td>$2.700.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-content">
+                    <h3>Desglose de Costos por Paquete de Trabajo</h3>
+                    <p class="text-muted">Perfiles del Equipo Consultor: P1(Líder de Analítica e Ingeniería de Datos) |
+                        P2(Líder de Auditoría Médica y Procesos Clínicos) </p>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.1: Gestión y Dirección del Proyecto (Semanas 1 a 25)</h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 100 horas totales (50 h por perfil, 2 horas semanales
+                                continuas de control(actas, hitos y comités)).</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $7.500.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.2: Mapeo de Procesos y Linaje del Dato (A02, A03, A04 - Entregable 1)</h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 120 horas (60 h por perfil).</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $9.000.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.3: Gestión de Riesgos de Calidad de la Información (A05, A06 - Entregable 2)
+                            </h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 80 horas (40 h por perfil: 5 días hábiles cada actividad).
+                            </p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $6.000.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.4: Conciliación Censal y Metadatos Contractuales (A07, A08 - Entregables 3 y
+                                4)</h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 110 horas totales. (P1 = A08: 70h) (P2 = A07: 40h)</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $8.250.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.5: Pipeline Automatizado de Pre-Auditoría Pre-RIPS/FEV (A09, A10, A11 -
+                                Entregable 5)</h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 240 horas totales. (P1 = A10: 120 h; A11: 30 h) (P2 = A09:
+                                60 h; A11: 30 h)</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $18.000.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquetes 1.6.1 a 1.6.3: Visualización Analítica (A12 - Entregable 6), Calibración (A14)
+                                y Transferencia (A15)</h3>
+                            <p><strong>Perfil:</strong> Equipo Consultor</p>
+                            <p><strong>Dedicación:</strong> 140 horas totales. (P1 = A12: 50 h; A14: 30 h; A15: 20 h)
+                                (P2 = A14: 20 h; A15: 20 h)</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $10.500.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>Paquete 1.6.4: Marco de Mejora Continua y Analítica Diagnóstica de Glosas (A13 -
+                                Entregable 7)</h3>
+                            <p><strong>Perfil:</strong> Líder de Auditoría Médica y Procesos Clínicos</p>
+                            <p><strong>Dedicación:</strong> 60 horas técnicas.</p>
+                            <p><strong>Tarifa:</strong> $75.000 COP/hora.</p>
+                            <p><strong>Subtotal:</strong> $4.500.000 COP</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-details">
+                            <h3>SUBTOTAL SERVICIOS PROFESIONALES ESPECIALIZADOS</h3>
+                            <p><strong>Total Horas de Consultoría:</strong> 850 horas</p>
+                            <p><strong>Subtotal Honorarios:</strong> $63.750.000 COP.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="text-content">
+                    <h3>Consolidado Presupuestal y Reservas Financieras</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Rubro Presupuestal</th>
+                                <th>Base de Cálculo</th>
+                                <th>Valor Total (COP)</th>
+                                <th>Participación (%)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Costos Directos: Operativos, Logística y Manuales</td>
+                                <td>Gastos directos de ejecución y transferencia</td>
+                                <td>$2.700.000</td>
+                                <td>3,9%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Costos Directos: Honorarios Profesionales de Gerencia</td>
+                                <td>850 horas especializadas a $75.000 COP/h</td>
+                                <td>$63.750.000</td>
+                                <td>91,4%</td>
+                            </tr>
+
+                            <tr>
+                                <td>Reserva de Contingencia de Riesgos (5%)</td>
+                                <td>Fondo específico para absorber impactos de la matriz de riesgos</td>
+                                <td>$3.322.500</td>
+                                <td>4,7%</td>
+                            </tr>
+
+                            <tr>
+                                <td>PRESUPUESTO TOTAL FINANCIERO DEL PROYECTO</td>
+                                <td></td>
+                                <td>$69.772.500</td>
+                                <td>100%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <section class="content-card" id="matriz-riesgos">
+                <div class="card-header">
+                    <h2>Gestión de Riesgos</h2>
+                    <p >Al adoptar una secuencia estricta fin-a-inicio que cruza los dias festivos de fin de año y la Semana Santa en marzo de 2027, el perfil de riesgos se ajusta considerando la estacionalidad operativa de la IPS, los festivos no laborables y el paquete 1.6.4.</p>
+                    <br>
+                    <p>
+                        <strong>Probabilidad (P):</strong> Muy Baja (1) para valores menores al 10%, Baja (2) entre el 10% y el 30%, Media (3) entre el 31% y el 50%, Alta (4) entre el 51% y el 70%, y Muy Alta (5) para valores mayores al 70%.
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Impacto (I):</strong> Insignificante (1), Menor (2), Moderado (3), Mayor (4) y Catastrófico (5).
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Severidad (P * I):</strong> La Zona Verde representa un nivel bajo con valores de 1 a 5, requiriendo un monitoreo de rutina sin afectación de la línea base. La Zona Amarilla representa un nivel medio con valores de 6 a 12, requiriendo un control preventivo activo por parte de 
+                        los líderes de frente. La Zona Roja representa un nivel alto o crítico con valores de 15 a 25, tratándose de un riesgo crítico que exige un plan de respuesta inmediato y contempla la posible afectación de reservas.
+                    </p>
+                    <br>
+                    <p class="text-muted" id="riesgos-resumen">Cargando matriz de riesgos…</p>
+                </div>
+
+                <div class="risk-kpis" id="risk-kpis" aria-label="Resumen por nivel de riesgo"></div>
+
+                <div class="risk-filters" role="group" aria-label="Filtrar por nivel de riesgo">
+                    <button type="button" class="risk-filter is-active" data-nivel="todos"
+                        aria-pressed="true">Todos</button>
+                    <button type="button" class="risk-filter" data-nivel="Alto" aria-pressed="false">Alto</button>
+                    <button type="button" class="risk-filter" data-nivel="Medio" aria-pressed="false">Medio</button>
+                    <button type="button" class="risk-filter" data-nivel="Bajo" aria-pressed="false">Bajo</button>
+                </div>
+                <p class="small-text text-muted risk-status" id="risk-status" role="status" aria-live="polite"></p>
+
+                <h3 class="gantt-subtitle">Mapa de calor Severidad (Probabilidad × Impacto)</h3>
+                <div class="table-container">
+                    <div class="risk-heat" id="risk-heat" role="img"
+                        aria-label="Mapa de calor de riesgos por probabilidad e impacto">
+                    </div>
+                </div>
+                <p class="small-text text-muted risk-scale" id="risk-scale"></p>
+
+                <h3 class="gantt-subtitle">Detalle de riesgos</h3>
+                <p class="small-text text-muted">Selecciona un riesgo para ver su causa raíz, plan preventivo y plan de
+                    contingencia.
+                </p>
+                <div class="table-container risk-table-wrap">
+                    <table class="modern-table" id="risk-tabla">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Riesgo identificado</th>
+                                <th>Categoría</th>
+                                <th>P</th>
+                                <th>I</th>
+                                <th>Sev.</th>
+                                <th>Nivel</th>
+                                <th>Estrategia</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+
+                <div class="text-content">
+                    <h3>Gobernanza del Riesgo y Activación de Contingencias</h3>
+                </div>
+                <p>
+                    <strong>Monitoreo Quincenal:</strong> Los riesgos clasificados en nivel medio y alto serán evaluados en los comités de seguimiento gerencial quincenales, actualizando su exposición residual.
+                </p>
+                <br>
+                <p>
+                    <strong>Criterio de Desembolso de Reserva Financiera:</strong> Cuando un riesgo de nivel Alto (RSG-03 o RSG-05) supere la puntuación de 15 o amenace la fecha límite del 22 de abril de 2027, 
+                    el equipo consultor queda facultado para utilizar la Reserva de Contingencia con el fin de financiar horas extras de soporte técnico, pruebas intensivas de compatibilidad o apoyo logístico extraordinario.
+                </p>
+
+
+                <noscript>
+                    <p class="text-muted">Se requiere JavaScript para mostrar la matriz de riesgos.</p>
+                </noscript>
+            </section>
+
         </main>
-
-
     </div>
 
-
+    <script src="cronograma.js" defer></script>
+    <script src="riesgos.js" defer></script>
     <script>
         // 1. Lógica para el botón (+ / -)
         const toggleBtns = document.querySelectorAll('.toggle-btn');
 
         toggleBtns.forEach(btn => {
-            btn.addEventListener('click', function(e) {
+            btn.addEventListener('click', function (e) {
                 e.preventDefault(); // Evita cualquier comportamiento por defecto
-            
+
                 // Busca el contenedor '.nav-items' que está justo después del '.section-header'
                 const navItems = this.closest('.section-header').nextElementSibling;
                 const icon = this.querySelector('.toggle-icon');
@@ -139,8 +727,8 @@
         const navPills = document.querySelectorAll('.nav-pill');
 
         navPills.forEach(pill => {
-            pill.addEventListener('click', function() {
-                if(!this.classList.contains('disabled')) {
+            pill.addEventListener('click', function () {
+                if (!this.classList.contains('disabled')) {
                     navPills.forEach(p => p.classList.remove('active'));
                     this.classList.add('active');
                 }
@@ -162,7 +750,7 @@
             allMobileLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     // Solo si estamos en versión móvil (ancho menor a 900px)
-                    if(window.innerWidth <= 900) {
+                    if (window.innerWidth <= 900) {
                         sidebarMenu.classList.remove('active');
                     }
                 });
@@ -170,4 +758,5 @@
         }
     </script>
 </body>
+
 </html>

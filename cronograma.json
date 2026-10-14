@@ -1,0 +1,371 @@
+{
+  "proyecto": "Data Quality Framework (Cronograma)",
+  "cliente": "RETINHER",
+  "inicio_proyecto": "2026-11-02",
+  "festivos": [
+    "2026-11-02",
+    "2026-11-16",
+    "2026-12-08",
+    "2026-12-25",
+    "2027-01-01",
+    "2027-01-11",
+    "2027-03-22",
+    "2027-03-25",
+    "2027-03-26"
+  ],
+  "responsables": [
+    {
+      "id": "cogerentes",
+      "corto": "Co-Gerentes",
+      "nombre": "Co-Gerentes de Proyecto"
+    },
+    {
+      "id": "auditoria",
+      "corto": "Auditoría Médica",
+      "nombre": "Líder de Auditoría Médica y Procesos Clínicos"
+    },
+    {
+      "id": "analitica",
+      "corto": "Analítica",
+      "nombre": "Líder de Analítica e Ingeniería de Datos"
+    }
+  ],
+  "items": [
+    {
+      "id": "A01",
+      "tipo": "actividad",
+      "nombre": "Formalización del Project Charter, constitución del equipo y análisis de interesados",
+      "corto": "",
+      "responsable": "cogerentes",
+      "responsable_nombre": "Co-Gerentes de Proyecto",
+      "inicio": "2026-11-03",
+      "fin": "2026-11-17",
+      "dias_habiles": 10,
+      "semana_inicio": 1,
+      "semana_fin": 3,
+      "predecesoras": [],
+      "entregable": ""
+    },
+    {
+      "id": "H1",
+      "tipo": "hito",
+      "nombre": "Acta de Constitución formalizada y aprobada por Gerencia General de RETINHER",
+      "corto": "Acta de Constitución aprobada",
+      "fecha": "2026-11-17",
+      "semana": 3,
+      "tras": [
+        "A01"
+      ]
+    },
+    {
+      "id": "A02",
+      "tipo": "actividad",
+      "nombre": "Relevamiento detallado de procesos clínicos, flujos asistenciales y de admisión",
+      "corto": "Relevamiento de procesos clínicos y de admisión",
+      "responsable": "auditoria",
+      "responsable_nombre": "Líder de Auditoría Médica y Procesos Clínicos",
+      "inicio": "2026-11-18",
+      "fin": "2026-12-01",
+      "dias_habiles": 10,
+      "semana_inicio": 3,
+      "semana_fin": 5,
+      "predecesoras": [
+        "A01"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A03",
+      "tipo": "actividad",
+      "nombre": "Análisis de esquemas relacionales, diccionarios de datos y extracción en bases de datos HIS/ERP",
+      "corto": "Esquemas y extracción de bases HIS/ERP",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2026-11-18",
+      "fin": "2026-12-01",
+      "dias_habiles": 10,
+      "semana_inicio": 3,
+      "semana_fin": 5,
+      "predecesoras": [
+        "A01"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A04",
+      "tipo": "actividad",
+      "nombre": "Construcción y validación del mapa integral de Linaje del Dato (Data Lineage Map - Entregable 1)",
+      "corto": "Mapa de Linaje del Dato (E1)",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2026-12-02",
+      "fin": "2026-12-09",
+      "dias_habiles": 5,
+      "semana_inicio": 5,
+      "semana_fin": 6,
+      "predecesoras": [
+        "A02",
+        "A03"
+      ],
+      "entregable": "Entregable 1"
+    },
+    {
+      "id": "H2",
+      "tipo": "hito",
+      "nombre": "Mapa integral de linaje de datos (Entregable 1) finalizado y validado operativamente",
+      "corto": "Linaje validado",
+      "fecha": "2026-12-09",
+      "semana": 6,
+      "tras": [
+        "A04"
+      ]
+    },
+    {
+      "id": "A05",
+      "tipo": "actividad",
+      "nombre": "Identificación, evaluación y clasificación de riesgos de calidad del dato bajo dimensiones DAMA-DMBOK",
+      "corto": "Riesgos de calidad bajo DAMA-DMBOK",
+      "responsable": "auditoria",
+      "responsable_nombre": "Líder de Auditoría Médica y Procesos Clínicos",
+      "inicio": "2026-12-10",
+      "fin": "2026-12-16",
+      "dias_habiles": 5,
+      "semana_inicio": 6,
+      "semana_fin": 7,
+      "predecesoras": [
+        "A04"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A06",
+      "tipo": "actividad",
+      "nombre": "Consolidación y aprobación de la Matriz Integral de Riesgos y Controles Preventivos (Entregable 2)",
+      "corto": "Matriz de Riesgos y Controles (E2)",
+      "responsable": "cogerentes",
+      "responsable_nombre": "Co-Gerentes de Proyecto",
+      "inicio": "2026-12-17",
+      "fin": "2026-12-23",
+      "dias_habiles": 5,
+      "semana_inicio": 7,
+      "semana_fin": 8,
+      "predecesoras": [
+        "A05"
+      ],
+      "entregable": "Entregable 2"
+    },
+    {
+      "id": "A07",
+      "tipo": "actividad",
+      "nombre": "Estructuración y parametrización del catálogo digital de metadatos contractuales per cápita (Entregable 4)",
+      "corto": "Catálogo de metadatos contractuales (E4)",
+      "responsable": "auditoria",
+      "responsable_nombre": "Líder de Auditoría Médica y Procesos Clínicos",
+      "inicio": "2026-12-24",
+      "fin": "2026-12-31",
+      "dias_habiles": 5,
+      "semana_inicio": 8,
+      "semana_fin": 9,
+      "predecesoras": [
+        "A06"
+      ],
+      "entregable": "Entregable 4"
+    },
+    {
+      "id": "H3",
+      "tipo": "hito",
+      "nombre": "Matriz integral de riesgos (Entregable 2) y repositorio de metadatos contractuales (Entregable 4) completados",
+      "corto": "Matriz y metadatos completados",
+      "fecha": "2026-12-31",
+      "semana": 9,
+      "tras": [
+        "A06",
+        "A07"
+      ]
+    },
+    {
+      "id": "A08",
+      "tipo": "actividad",
+      "nombre": "Programación y calibración del algoritmo de conciliación censal masiva (Record Linkage - Entregable 3)",
+      "corto": "Record Linkage (E3)",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2026-12-24",
+      "fin": "2027-01-18",
+      "dias_habiles": 15,
+      "semana_inicio": 8,
+      "semana_fin": 12,
+      "predecesoras": [
+        "A06"
+      ],
+      "entregable": "Entregable 3"
+    },
+    {
+      "id": "H4",
+      "tipo": "hito",
+      "nombre": "Algoritmo de conciliación de población (Record Linkage - Entregable 3) validado con censos EPS",
+      "corto": "Record Linkage validado",
+      "fecha": "2027-01-18",
+      "semana": 12,
+      "tras": [
+        "A08"
+      ]
+    },
+    {
+      "id": "A09",
+      "tipo": "actividad",
+      "nombre": "Diseño y codificación de la matriz de reglas clínicas cruzadas (CIE-10 / CUPS / Sexo / Edad)",
+      "corto": "Reglas clínicas cruzadas",
+      "responsable": "auditoria",
+      "responsable_nombre": "Líder de Auditoría Médica y Procesos Clínicos",
+      "inicio": "2027-01-04",
+      "fin": "2027-01-25",
+      "dias_habiles": 15,
+      "semana_inicio": 10,
+      "semana_fin": 13,
+      "predecesoras": [
+        "A07"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A10",
+      "tipo": "actividad",
+      "nombre": "Desarrollo computacional del pipeline ETL y motor de auditoría automatizada Pre-RIPS/FEV (Entregable 5)",
+      "corto": "Pipeline ETL Pre-RIPS/FEV (E5)",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2027-01-26",
+      "fin": "2027-02-22",
+      "dias_habiles": 20,
+      "semana_inicio": 13,
+      "semana_fin": 17,
+      "predecesoras": [
+        "A08",
+        "A09"
+      ],
+      "entregable": "Entregable 5"
+    },
+    {
+      "id": "H5",
+      "tipo": "hito",
+      "nombre": "Pipeline automatizado de pre-auditoría Pre-RIPS/FEV (Entregable 5) programado y listo para pruebas masivas",
+      "corto": "Pipeline listo para pruebas masivas",
+      "fecha": "2027-02-22",
+      "semana": 17,
+      "tras": [
+        "A10"
+      ]
+    },
+    {
+      "id": "A11",
+      "tipo": "actividad",
+      "nombre": "Pruebas funcionales de pre-validación con lotes transaccionales históricos anonimizados de RETINHER",
+      "corto": "Pruebas con lotes históricos",
+      "responsable": "cogerentes",
+      "responsable_nombre": "Co-Gerentes de Proyecto",
+      "inicio": "2027-02-23",
+      "fin": "2027-03-08",
+      "dias_habiles": 10,
+      "semana_inicio": 17,
+      "semana_fin": 19,
+      "predecesoras": [
+        "A10"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A12",
+      "tipo": "actividad",
+      "nombre": "Modelado analítico y despliegue del tablero de control interactivo (BI Dashboard - Entregable 6)",
+      "corto": "Tablero BI (E6)",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2027-02-23",
+      "fin": "2027-03-15",
+      "dias_habiles": 15,
+      "semana_inicio": 17,
+      "semana_fin": 20,
+      "predecesoras": [
+        "A10"
+      ],
+      "entregable": "Entregable 6"
+    },
+    {
+      "id": "A13",
+      "tipo": "actividad",
+      "nombre": "Diseño e institucionalización del marco de mejora continua, retroalimentación y aprendizaje de glosas (Paquete 1.6.4 - Entregable 7)",
+      "corto": "Marco de mejora continua (E7)",
+      "responsable": "auditoria",
+      "responsable_nombre": "Líder de Auditoría Médica y Procesos Clínicos",
+      "inicio": "2027-03-09",
+      "fin": "2027-03-23",
+      "dias_habiles": 10,
+      "semana_inicio": 19,
+      "semana_fin": 21,
+      "predecesoras": [
+        "A11"
+      ],
+      "entregable": "Entregable 7"
+    },
+    {
+      "id": "H6",
+      "tipo": "hito",
+      "nombre": "Tablero BI (Entregable 6) y Marco de Mejora Continua (Entregable 7 / Paquete 1.6.4) implementados formalmente",
+      "corto": "Tablero BI y marco implementados",
+      "fecha": "2027-03-23",
+      "semana": 21,
+      "tras": [
+        "A12",
+        "A13"
+      ]
+    },
+    {
+      "id": "A14",
+      "tipo": "actividad",
+      "nombre": "Calibración final del motor validador, pruebas de integración extremo a extremo y ajuste de umbrales",
+      "corto": "Calibración final e integración",
+      "responsable": "analitica",
+      "responsable_nombre": "Líder de Analítica e Ingeniería de Datos",
+      "inicio": "2027-03-24",
+      "fin": "2027-04-08",
+      "dias_habiles": 10,
+      "semana_inicio": 21,
+      "semana_fin": 23,
+      "predecesoras": [
+        "A12",
+        "A13"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "A15",
+      "tipo": "actividad",
+      "nombre": "Capacitación al personal, entrega de manuales técnicos/operativos y cierre formal del proyecto",
+      "corto": "Capacitación y cierre formal",
+      "responsable": "cogerentes",
+      "responsable_nombre": "Co-Gerentes de Proyecto",
+      "inicio": "2027-04-09",
+      "fin": "2027-04-22",
+      "dias_habiles": 10,
+      "semana_inicio": 23,
+      "semana_fin": 25,
+      "predecesoras": [
+        "A14"
+      ],
+      "entregable": ""
+    },
+    {
+      "id": "H7",
+      "tipo": "hito",
+      "nombre": "Calibración final efectuada, manuales entregados, personal capacitado y acta de cierre institucional suscrita",
+      "corto": "Cierre institucional",
+      "fecha": "2027-04-22",
+      "semana": 25,
+      "tras": [
+        "A14",
+        "A15"
+      ]
+    }
+  ]
+}
