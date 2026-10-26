@@ -21,14 +21,14 @@
                 <span class="logo-text">ESEIT <span class="fw-light">/ PMBOK</span></span>
             </div>
             <div class="nav-badges">
-                <span class="status-badge">Pendiente</span>
+                <span class="status-badge pulse">En Progreso</span>
             </div>
         </div>
     </nav>
 
     <header class="hero-section">
         <div class="hero-content">
-            <h1 class="hero-title">Fase 3: Ejecución y Cierre</h1>
+            <h1 class="hero-title">🛠️ Fase 3: Ejecución y Cierre</h1>
             <p class="hero-subtitle">Asignación de calidad, comunicaciones y matriz de impacto final.</p>
         </div>
     </header>
@@ -92,7 +92,10 @@
                             <button class="toggle-btn"><span class="toggle-icon">-</span></button>
                         </div>
                         <div class="nav-items">
-                            <a href="fase3.html" class="nav-pill">Ejecución e Impacto</a>
+                            <a href="fase3.html#asignacion" class="nav-pill">Asignación de Tareas</a>
+                            <a href="fase3.html#calidad" class="nav-pill">Plan de Calidad</a>
+                            <a href="fase3.html#comunicacion" class="nav-pill">Gestión de la Comunicación</a>
+                            <a href="fase3.html#roi" class="nav-pill">ROI e Impacto</a>
                         </div>
                     </div>
                 </nav>
@@ -101,7 +104,1070 @@
 
         <!-- CONTENIDO -->
         <main class="content-area">
+            <!-- ===================== 1. ASIGNACIÓN DE TAREAS ===================== -->
+            <section id="asignacion" class="content-card">
+                <div class="card-header">
+                    <h2>Asignación de Tareas</h2>
+                    <p class="text-muted">Desarrollo del trabajo planificado · Grupo de Ejecución (Semana 7)</p>
+                </div>
 
+                <div class="text-content">
+                    <h3>Modelo Operativo y Estructura Organizacional del Proyecto</h3>
+                    <p>
+                        La ejecución del proyecto se estructura bajo un modelo de coliderazgo técnico-asistencial
+                        complementario, articulando las directrices de gerencia de proyectos del estándar PMBOK con las
+                        mejores prácticas de la ingeniería de software, la ciencia de datos y la auditoría clínica
+                        hospitalaria. Esta gobernanza asegura que cada decisión analítica responda al marco normativo
+                        vigente de salud en Colombia (Resoluciones 510/2022, 2806/2022 y 2275/2023 de MinSalud para
+                        RIPS/FEV) y a las particularidades de contratación per cápita de RETINHER IPS con sus
+                        Entidades Promotoras de Salud (EPS).
+                    </p>
+                </div>
+
+                <div class="orgchart" role="img"
+                    aria-label="Organigrama del proyecto: Gerencia General, dos co-gerentes y sus frentes de trabajo">
+                    <div class="org-node org-top"><b>Gerencia General (RETINHER IPS)</b><span>Sponsor
+                            Institucional</span></div>
+                    <div class="org-line"></div>
+                    <div class="org-row">
+                        <div class="org-col">
+                            <div class="org-node org-tec"><b>Co-Gerente de Proyecto Técnico</b><span>Líder Analítica e
+                                    Ingeniería de Datos (Ing. Informático – Big Data)</span></div>
+                            <div class="org-line"></div>
+                            <div class="org-row org-row-sm">
+                                <div class="org-node org-leaf"><b>Infraestructura &amp; Bases de Datos</b><span>Enlace
+                                        TI RETINHER</span></div>
+                                <div class="org-node org-leaf"><b>Motor Analítico / ETL
+                                        Pre-RIPS</b><span>Desarrollo</span></div>
+                            </div>
+                        </div>
+                        <div class="org-col">
+                            <div class="org-node org-sal"><b>Co-Gerente de Proyecto Asistencial</b><span>Líder Auditoría
+                                    Médica y Procesos (Profesional de Salud – Auditor)</span></div>
+                            <div class="org-line"></div>
+                            <div class="org-row org-row-sm">
+                                <div class="org-node org-leaf"><b>Procesos Asistenciales &amp; Historia
+                                        Clínica</b><span>Enlace Médico / Admisiones</span></div>
+                                <div class="org-node org-leaf"><b>Auditoría de Cuentas y Conciliación
+                                        Censo</b><span>Enlace Facturación</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3>Roles, Responsabilidades y Cargas de Trabajo</h3>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">💻</div>
+                        <div class="member-details">
+                            <h4>Líder de Analítica e Ingeniería de Datos</h4>
+                            <p><strong>Responsabilidades:</strong> arquitectura del flujo de datos, extracción y
+                                peritaje de tablas maestras del HIS, modelado e implementación del motor de <em>Record
+                                    Linkage</em>, desarrollo del pipeline ETL en Python/SQL, compuertas analíticas de
+                                calidad, tablero BI (Power BI / Metabase) y soporte técnico del entorno de
+                                staging.<br><strong>Dedicación:</strong> 470 horas en 25 semanas (~19 h semanales).</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">🩺</div>
+                        <div class="member-details">
+                            <h4>Líder de Auditoría Médica y Procesos Clínicos</h4>
+                            <p><strong>Responsabilidades:</strong> mapeo y estandarización del flujo clínico, taxonomía
+                                de riesgos de información DAMA-DMBOK, codificación de la matriz de reglas clínicas
+                                cruzadas (CIE-10 vs. CUPS y CUM), parametrización contractual per cápita, marco de
+                                mejora continua (Paquete 1.6.4 / Entregable 7) y análisis de causa raíz sobre históricos
+                                de glosas.<br><strong>Dedicación:</strong> 380 horas en 25 semanas (~15 h semanales).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">🏢</div>
+                        <div class="member-details">
+                            <h4>Contrapartes Técnicas Institucionales (RETINHER IPS)</h4>
+                            <p><strong>Dirección de Sistemas e Infraestructura TI:</strong> servidor de staging, vistas
+                                de solo lectura, réplicas nocturnas de la base SQL del HIS/ERP, accesos seguros y
+                                acompañamiento en pruebas de integración.<br><strong>Coordinación de Facturación y
+                                    Cuentas Médicas:</strong> lotes históricos anonimizados de facturación y RIPS,
+                                expedientes y respuestas a glosas, validación funcional de alertas y aprobación de la
+                                interfaz de pre-auditoría.<br><strong>Personal Asistencial y de Admisiones:</strong>
+                                registro clínico estructurado y validación censal rigurosa en el primer contacto con el
+                                usuario.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🏥</div>
+                        <div class="member-details">
+                            <h4>Interesado Externo Clave: Auditoría Médica de la EPS</h4>
+                            <p>Homologación de criterios técnicos sobre causas de devolución, reglas de pertinencia
+                                médica per cápita y transferencia mensual oportuna de las bases censales de usuarios
+                                activos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Matriz de Asignación de Responsabilidades (RACI)</h3>
+                    <p>
+                        La matriz define las responsabilidades de las 15 actividades del cronograma oficial (A01 a A15)
+                        y los 7 entregables mayores, garantizando que cada tarea cuente con un ejecutor directo y un
+                        aprobador claramente identificado.
+                    </p>
+                </div>
+                <div class="raci-legend">
+                    <span><span class="raci raci-r">R</span> <b>Responsible:</b> realiza la actividad</span>
+                    <span><span class="raci raci-a">A</span> <b>Accountable:</b> aprueba y responde por el
+                        entregable</span>
+                    <span><span class="raci raci-c">C</span> <b>Consulted:</b> aporta criterio experto o datos</span>
+                    <span><span class="raci raci-i">I</span> <b>Informed:</b> recibe notificación de avance</span>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table raci-table">
+                        <thead>
+                            <tr>
+                                <th>WBS / ID</th>
+                                <th>Actividad / Entregable</th>
+                                <th>PM-INF</th>
+                                <th>PM-SAL</th>
+                                <th>Sponsor</th>
+                                <th>Facturación</th>
+                                <th>TI / BD</th>
+                                <th>Auditoría EPS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1.1 / A01</strong></td>
+                                <td>Formalización del Project Charter, plan de gestión y registro de stakeholders</td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-a">A</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.2.1 / A02</strong></td>
+                                <td>Relevamiento de procesos asistenciales, de admisión y flujo de atención clínica</td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.2.2 / A03</strong></td>
+                                <td>Análisis de diccionarios de datos, llaves foráneas y esquemas SQL del HIS/ERP</td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.2.3 / A04</strong></td>
+                                <td>Elaboración y validación del Mapa de Linaje del Dato <strong>(Entregable 1)</strong>
+                                </td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.3.1 / A05</strong></td>
+                                <td>Clasificación de factores y fallas de calidad bajo dimensiones DAMA-DMBOK</td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.3.4 / A06</strong></td>
+                                <td>Consolidación de la Matriz Integral de Riesgos y Controles Preventivos
+                                    <strong>(Entregable 2)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.4.1-2 / A07</strong></td>
+                                <td>Parametrización digital de metadatos contractuales per cápita <strong>(Entregable
+                                        4)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.4.3 / A08</strong></td>
+                                <td>Programación del motor algorítmico de conciliación censal <em>Record Linkage</em>
+                                    <strong>(Entregable 3)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.5.2 / A09</strong></td>
+                                <td>Codificación médica de reglas clínicas cruzadas (CIE-10 vs. CUPS/CUM/Sexo/Edad)</td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.5.1-4 / A10</strong></td>
+                                <td>Programación del Pipeline ETL automatizado de auditoría Pre-RIPS/FEV
+                                    <strong>(Entregable 5)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.5.4 / A11</strong></td>
+                                <td>Pruebas funcionales de pre-validación con lotes transaccionales históricos en
+                                    staging</td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.6.2 / A12</strong></td>
+                                <td>Modelado analítico y puesta en producción del Dashboard BI <strong>(Entregable
+                                        6)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.6.4 / A13</strong></td>
+                                <td>Implementación del Marco de Mejora Continua y retroalimentación de glosas
+                                    <strong>(Entregable 7)</strong></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.6.3 / A14</strong></td>
+                                <td>Calibración final del motor validador, integración extremo a extremo y umbrales</td>
+                                <td class="raci-cell"><span class="raci raci-ar">A / R</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-c">C</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                            <tr>
+                                <td><strong>1.6.1 / A15</strong></td>
+                                <td>Talleres de capacitación operativa, entrega de manuales técnicos y acta de cierre
+                                </td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-a">A</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-r">R</span></td>
+                                <td class="raci-cell"><span class="raci raci-i">I</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="small-text text-muted" style="margin-top:.75rem">PM-INF: Co-Gerente Técnico (Informático) ·
+                    PM-SAL: Co-Gerente Asistencial (Salud).</p>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Protocolo de Ejecución Técnica y Seguridad (Ley 1581 de 2012)</h3>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🧱</div>
+                        <div class="member-details">
+                            <h4>Arquitectura desacoplada y ambiente de staging</h4>
+                            <p>Para mitigar el riesgo RSG-01 (degradación del sistema transaccional HIS) se despliega
+                                una réplica de solo lectura (<em>Staging Area</em>). Perfilamiento, entrenamiento de
+                                reglas, cruces censales y pre-auditoría se ejecutan solo allí. Las extracciones desde
+                                producción corren como rutinas <em>batch</em> entre las 02:00 a.m. y las 04:00 a.m., sin
+                                bloqueos de tablas durante la consulta diurna.</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🔀</div>
+                        <div class="member-details">
+                            <h4>Gobierno de versiones y despliegue continuo</h4>
+                            <p>Reglas de validación en Python, esquemas DDL de PostgreSQL/SQLite y consultas SQL se
+                                versionan con Git en un repositorio privado institucional, con estrategia
+                                <em>GitFlow</em>: <code>development</code> (desarrollo local), <code>staging</code>
+                                (pruebas con datos históricos) y <code>main/production</code> (versión estable para
+                                facturación).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3>Privacidad, anonimización y seguridad (Habeas Data)</h3>
+                    <p>
+                        Al tratarse de datos sensibles de salud protegidos por la Ley 1581 de 2012 y la reserva de la
+                        historia clínica, se aplica una política estricta de anonimización y enmascaramiento antes de
+                        transferir datos a los ambientes de desarrollo y análisis:
+                    </p>
+                    <p><strong>1. Tokenización y hashing criptográfico:</strong> los números de identificación se
+                        transforman con funciones hash unidireccionales con semilla fija (SHA-256); se conserva la
+                        unicidad para análisis longitudinales, pero se impide la reidentificación directa fuera del
+                        entorno productivo seguro.</p>
+                    <p><strong>2. Enmascaramiento demográfico:</strong> nombres y apellidos se sustituyen por cadenas
+                        pseudoaleatorias canónicas (<code>PACIENTE_ID_XXXXX</code>) y las direcciones se generalizan a
+                        sector o código DANE municipal.</p>
+                    <p><strong>3. Control de accesos basado en roles (RBAC):</strong> el acceso a staging y a las bases
+                        analíticas se restringe a las credenciales autenticadas de los dos co-gerentes y el DBA de
+                        RETINHER, con auditoría de todos los logs de consulta.</p>
+                </div>
+            </section>
+
+            <!-- ===================== 2. PLAN DE CALIDAD ===================== -->
+            <section id="calidad" class="content-card">
+                <div class="card-header">
+                    <h2>Plan de Calidad</h2>
+                    <p class="text-muted">Control y aseguramiento de la calidad del dato</p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Política y Principios de Calidad del Dato</h3>
+                </div>
+                <div class="vision-statement">
+                    <strong>"Calidad en el Origen" (<em>Quality at the Source</em>):</strong> la degradación de la
+                    información debe prevenirse, interceptarse y corregirse en el momento exacto en que se genera el
+                    dato
+                    clínico o administrativo, erradicando la inspección tardía en la que las inconsistencias se
+                    descubren
+                    mediante glosas y rechazos de la EPS al final del ciclo de facturación.
+                </div>
+                <div class="text-content">
+                    <p style="margin-top:1rem">
+                        El plan se rige por el marco <strong>DAMA-DMBOK</strong> (<em>Data Management Body of
+                            Knowledge</em>) adaptado al ecosistema de interoperabilidad en salud de Colombia,
+                        articulando las
+                        Resoluciones 510/2022, 2806/2022 y 2275/2023 de MinSalud para la validación obligatoria de los
+                        esquemas de Factura Electrónica de Venta (FEV) y Registros Individuales de Prestación de
+                        Servicios de Salud (RIPS).
+                    </p>
+                    <h3>Dimensiones Formales de Calidad del Dato (DAMA-DMBOK)</h3>
+                </div>
+
+                <div class="dim-tree" role="img" aria-label="Calidad en el origen y sus cinco dimensiones">
+                    <div class="org-node org-top"><b>Calidad en el Origen</b></div>
+                    <div class="org-line"></div>
+                    <div class="dim-grid">
+                        <div class="org-node org-leaf"><b>Completitud</b><span>Ausencia de nulos en variables
+                                obligatorias</span></div>
+                        <div class="org-node org-leaf"><b>Conformidad</b><span>Estructuras JSON/XML canónicas, formatos
+                                de fecha y tipos válidos</span></div>
+                        <div class="org-node org-leaf"><b>Consistencia lógica</b><span>Coherencia clínica CIE-10 vs.
+                                CUPS/CUM, sexo y edad</span></div>
+                        <div class="org-node org-leaf"><b>Unicidad</b><span>Cero duplicados en atenciones
+                                idénticas</span></div>
+                        <div class="org-node org-leaf"><b>Oportunidad</b><span>Validación previa a la fecha límite de
+                                corte</span></div>
+                    </div>
+                </div>
+
+                <div class="team-grid" style="margin-top:1.5rem">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">✅</div>
+                        <div class="member-details">
+                            <h4>Completitud</h4>
+                            <p>Presencia íntegra de todos los atributos exigidos por la normatividad para cada tipo de
+                                servicio (consultas, procedimientos, medicamentos, urgencias, hospitalizaciones). Un
+                                registro sin identificación, diagnóstico principal o fecha de prestación se categoriza
+                                como no radicado y se bloquea antes de la emisión contable.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🧩</div>
+                        <div class="member-details">
+                            <h4>Conformidad sintáctica y estructural</h4>
+                            <p>Cada campo cumple formato, longitud, tipo de dato, expresiones regulares y estructuras
+                                jerárquicas de los esquemas JSON/XML validados por el Ministerio de Salud.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🔗</div>
+                        <div class="member-details">
+                            <h4>Consistencia lógica y pertinencia clínica</h4>
+                            <p>Evita contradicciones como diagnósticos ginecológicos en pacientes masculinos, atenciones
+                                pediátricas en adultos mayores, o procedimientos (CUPS) asociados a diagnósticos
+                                (CIE-10) que no justifican su pertinencia ni están amparados por el manual per cápita.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">1️⃣</div>
+                        <div class="member-details">
+                            <h4>Unicidad</h4>
+                            <p>Ausencia de registros duplicados para una misma atención (mismo usuario, fecha, hora y
+                                profesional), evitando glosas por sobrefacturación o cobro doble.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">⏱️</div>
+                        <div class="member-details">
+                            <h4>Oportunidad y vigencia</h4>
+                            <p>Captura, pre-auditoría y conciliación dentro de los márgenes para radicar en los primeros
+                                10 días calendario de cada mes, protegiendo el flujo de recursos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Quality Gates (Compuertas de Calidad), Fórmulas e Indicadores</h3>
+                    <p>El sistema implementa 6 compuertas de control algorítmico y operativo, cada una con una métrica
+                        cuantitativa y un umbral estricto de aprobación.</p>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table gates-table">
+                        <thead>
+                            <tr>
+                                <th>Quality Gate / Métrica</th>
+                                <th>Dimensión</th>
+                                <th>Fórmula de cálculo</th>
+                                <th>Meta</th>
+                                <th>Criterio de acción / bloqueo</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. Índice de Completitud del Dato (ICD)</strong></td>
+                                <td>Completitud</td>
+                                <td>
+                                    <div class="formula"><b>ICD</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Total Campos Obligatorios
+                                                Válidos y No Nulos</span><span>Total Campos Obligatorios Exigidos por
+                                                Norma</span></span><span class="par">)</span><span class="op">×
+                                            100</span></div>
+                                </td>
+                                <td><span class="pill-badge badge-low">100,0%</span></td>
+                                <td>Si ICD &lt; 100%, el lote es rechazado de inmediato y se devuelve a facturación para
+                                    corrección de vacíos.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. Tasa de Conformidad Sintáctica (TCS)</strong></td>
+                                <td>Conformidad</td>
+                                <td>
+                                    <div class="formula"><b>TCS</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Registros con Validación
+                                                JSON/XML Aprobada</span><span>Total Registros Evaluados en el
+                                                Lote</span></span><span class="par">)</span><span class="op">×
+                                            100</span></div>
+                                </td>
+                                <td><span class="pill-badge badge-low">100,0%</span></td>
+                                <td>Si TCS &lt; 100%, el script detiene la exportación y notifica el campo específico
+                                    con tipología inválida.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. Tasa de Falsos Positivos Clínicos (TFP)</strong></td>
+                                <td>Consistencia</td>
+                                <td>
+                                    <div class="formula"><b>TFP</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Alertas de Inconsistencia
+                                                Desestimadas Justificadamente</span><span>Total Alertas Clínicas
+                                                Emitidas por el Motor</span></span><span class="par">)</span><span
+                                            class="op">× 100</span></div>
+                                </td>
+                                <td><span class="pill-badge badge-low">&lt; 2,0%</span></td>
+                                <td>Si TFP ≥ 2%, se suspende el motor para recalibración y ajuste fino de la matriz de
+                                    reglas médicas cruzadas.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. Precisión de Conciliación Censal (PCC)</strong></td>
+                                <td>Consistencia / Unicidad</td>
+                                <td>
+                                    <div class="formula"><b>PCC</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Atenciones Conciliadas
+                                                Exitosamente contra Censo EPS</span><span>Total Atenciones Registradas
+                                                en el Periodo</span></span><span class="par">)</span><span class="op">×
+                                            100</span></div>
+                                </td>
+                                <td><span class="pill-badge badge-low">≥ 99,0%</span></td>
+                                <td>Si PCC &lt; 99%, las atenciones no coincidentes se aíslan y pasan a trámite por
+                                    evento o validación de novedades.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5. Tasa de Aceptación Primera Radicación (TAPR)</strong></td>
+                                <td>Calidad Global</td>
+                                <td>
+                                    <div class="formula"><b>TAPR</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Registros FEV/RIPS Aceptados
+                                                sin Glosa Técnica</span><span>Total Registros Radicados ante la
+                                                EPS</span></span><span class="par">)</span><span class="op">× 100</span>
+                                    </div>
+                                </td>
+                                <td><span class="pill-badge badge-low">≥ 75,0%</span></td>
+                                <td>Indicador de éxito contractual. Desviaciones activan revisión prioritaria del comité
+                                    interdisciplinar.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6. Índice de Adopción de Mejora Continua (IAMC)</strong></td>
+                                <td>Retroalimentación</td>
+                                <td>
+                                    <div class="formula"><b>IAMC</b><span class="op">=</span><span
+                                            class="par">(</span><span class="frac"><span>Glosas Notificadas con Causa
+                                                Raíz Parametrizada</span><span>Total Glosas y Devoluciones Notificadas
+                                                por EPS</span></span><span class="par">)</span><span class="op">×
+                                            100</span></div>
+                                </td>
+                                <td><span class="pill-badge badge-low">100,0%</span></td>
+                                <td>Exigencia obligatoria del Paquete 1.6.4 para reentrenar permanentemente el motor
+                                    validador institucional.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Puntos de Control y Auditoría de Calidad (Quality Checkpoints)</h3>
+                    <p>Flujo de cada lote desde el software HIS de RETINHER (extracción por <em>batch</em> nocturno)
+                        hasta la radicación.</p>
+                </div>
+                <ol class="checkpoints">
+                    <li>
+                        <div class="cp-head"><span class="cp-num">1</span>
+                            <h4>Post-Extracción y Conformidad Estructural</h4>
+                        </div>
+                        <p class="cp-rule">¿ICD = 100% y TCS = 100%? <span class="pill-badge badge-high">No: rechazo a
+                                facturación</span> <span class="pill-badge badge-low">Sí: avanza</span></p>
+                        <p>Se ejecuta automáticamente al concluir la extracción desde la réplica en staging. El script
+                            parsea los registros contra los esquemas canónicos y diccionarios de tipos. Todo lote con
+                            nulos en llaves primarias, identificaciones incompletas o fechas fuera de rango se segrega
+                            en un repositorio de cuarentena con un log detallado de error para facturación.</p>
+                    </li>
+                    <li>
+                        <div class="cp-head"><span class="cp-num">2</span>
+                            <h4>Pre-Auditoría Clínica y Reglas Cruzadas</h4>
+                        </div>
+                        <p class="cp-rule">¿Inconsistencias detectadas? <span class="pill-badge badge-med">Sí: marcado y
+                                alerta</span> <span class="pill-badge badge-low">Consistente: avanza</span></p>
+                        <p>El motor somete cada registro a la tabla de compatibilidad médica: pertinencia del
+                            diagnóstico frente al procedimiento, validez del CIE-10 para el sexo y rango etario, y
+                            diagnósticos secundarios obligatorios en patologías crónicas. Los registros no conformes van
+                            a la consola de pre-auditoría para que el auditor médico determine si es error de digitación
+                            o excepción facultativa justificada.</p>
+                    </li>
+                    <li>
+                        <div class="cp-head"><span class="cp-num">3</span>
+                            <h4>Conciliación Censal y Coberturas Contractuales</h4>
+                        </div>
+                        <p class="cp-rule">¿Usuario capitado y servicio cubierto? <span
+                                class="pill-badge badge-medhigh">No: desvío a evento</span> <span
+                                class="pill-badge badge-low">Sí: avanza</span></p>
+                        <p>El algoritmo de <em>Record Linkage</em> compara las atenciones contra el censo maestro
+                            mensual de la EPS y el catálogo de metadatos contractuales. Las prestaciones de usuarios
+                            inactivos o de tecnologías excluidas del acuerdo per cápita se extraen del paquete para no
+                            generar glosas masivas, derivándolas a cobro por evento o autorización previa.</p>
+                    </li>
+                    <li>
+                        <div class="cp-head"><span class="cp-num">4</span>
+                            <h4>Aprobación Final Multidisciplinar y Generación FEV/RIPS</h4>
+                        </div>
+                        <p class="cp-rule">Firma conjunta: Coordinador de Facturación y Auditor Médico.</p>
+                        <p>Con un ICD de 100% y las alertas clínicas resueltas, se emite el certificado digital de
+                            calidad del lote. Ambos responsables suscriben la aprobación en el sistema, habilitando la
+                            generación definitiva de los paquetes RIPS y la emisión de la FEV para transmisión al
+                            validador del Ministerio y a la EPS.</p>
+                    </li>
+                </ol>
+            </section>
+
+            <!-- ===================== 3. COMUNICACIÓN ===================== -->
+            <section id="comunicacion" class="content-card">
+                <div class="card-header">
+                    <h2>Gestión de la Comunicación</h2>
+                    <p class="text-muted">Flujo transparente, oportuno y bidireccional durante las 25 semanas de
+                        ejecución</p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Matriz Integral de Comunicación con Interesados</h3>
+                    <p>El plan asegura el flujo de información técnica, asistencial y estratégica, minimizando la
+                        incertidumbre y garantizando la toma coordinada de decisiones.</p>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Evento de comunicación</th>
+                                <th>Audiencia / destinatarios</th>
+                                <th>Canal / plataforma</th>
+                                <th>Frecuencia</th>
+                                <th>Responsable emisor</th>
+                                <th>Entregable / registro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Sincronización Técnica (Daily Standup)</strong></td>
+                                <td>Co-Gerente Informático y Co-Gerente Auditoría</td>
+                                <td>Canal privado Microsoft Teams / Tablero Asana</td>
+                                <td>Lunes, Miércoles y Viernes (15 min)</td>
+                                <td>Alternado entre Co-Gerentes</td>
+                                <td>Tablero Kanban actualizado y minuta corta de bloqueos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Comité de Dirección y Seguimiento Quincenal</strong></td>
+                                <td>Sponsor (Gerencia RETINHER), Co-Gerentes, Facturación, TI</td>
+                                <td>Sala de Juntas RETINHER / Enlace Híbrido</td>
+                                <td>Quincenal (jueves alternos, 10:00 a.m.)</td>
+                                <td>Co-Gerentes de Proyecto</td>
+                                <td><em>Status Report</em> Quincenal formal y Acta de Comité firmada</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Sesión de Arquitectura y Requerimientos con TI</strong></td>
+                                <td>Dirección de Sistemas / TI, Co-Gerente Informático</td>
+                                <td>Microsoft Teams / Sala de Sistemas</td>
+                                <td>Semanal</td>
+                                <td>Líder de Analítica e Ingeniería de Datos</td>
+                                <td>Acuerdos de seguridad, optimización de consultas SQL y minuta de requerimientos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Taller de Reglas de Negocio con Facturación</strong></td>
+                                <td>Coordinación de Facturación y Cuentas Médicas, Co-Gerentes</td>
+                                <td>Taller presencial / Microsoft Teams</td>
+                                <td>Semanal</td>
+                                <td>Co-Gerentes de Proyecto</td>
+                                <td>Reglas de negocio validadas, alertas de pre-auditoría revisadas y registro de capacitación</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mesa Técnica de Interoperabilidad con EPS</strong></td>
+                                <td>Auditoría Médica EPS, Enlace TI EPS, Co-Gerentes</td>
+                                <td>Videoconferencia formal grabada</td>
+                                <td>Mensual (primeros 5 días hábiles del mes)</td>
+                                <td>Líder de Auditoría Médica</td>
+                                <td>Minuta técnica de homologación censal y acuerdos de auditoría</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Mesa de Trabajo Asistencial y Admisiones</strong></td>
+                                <td>Jefatura de Enfermería, Cuerpo Médico, Personal Admisiones</td>
+                                <td>Auditorio Institucional / Talleres prácticos</td>
+                                <td>Quincenal</td>
+                                <td>Líder de Auditoría Médica</td>
+                                <td>Guías de codificación rápida y compromisos de calidad en origen</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Boletín Operativo de Calidad del Dato</strong></td>
+                                <td>Todo el personal asistencial y administrativo de RETINHER</td>
+                                <td>Correo institucional / Cartelera digital</td>
+                                <td>Mensual</td>
+                                <td>Co-Gerentes de Proyecto</td>
+                                <td>Infografía y boletín PDF con métricas de calidad y errores prevenidos</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Reporte de Hito Mayor / Avance Académico</strong></td>
+                                <td>Docente de la Asignatura (ESEIT), Gerencia RETINHER</td>
+                                <td>Plataforma Wiki ESEIT / Documentación PDF</td>
+                                <td>Según cronograma de hitos (Semanas 3, 6, 9, 12, 17, 21, 25)</td>
+                                <td>Co-Gerentes de Proyecto</td>
+                                <td>Artefactos cargados y publicados en la Wiki oficial</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Plantilla Estandarizada: Informe de Avance Periódico (Status Report
+                        Quincenal)</h3>
+                    <p>
+                        A través del siguiente <a
+                            href="https://docs.google.com/document/d/14iMOvjYn0oqaEp9q1Tjo-k5STePYUvvfKDvpmzgo9Is/edit?usp=sharing"
+                            target="_blank" title="Diagrama de Flujo">enlace</a>,
+                        se presenta el Formato único para el Comité de Dirección y Seguimiento.
+                    </p>
+                </div>
+                
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Protocolo de Escalamiento y Resolución de Conflictos (3 niveles)</h3>
+                    <p>Resuelve con celeridad las discrepancias técnicas, metodológicas o de recursos sin afectar la
+                        ruta crítica del cronograma de 25 semanas.</p>
+                </div>
+                <div class="escalation">
+                    <div class="esc-level esc-1">
+                        <div class="esc-head"><span class="pill-badge badge-low">Nivel 1</span><b>Operativo /
+                                Técnico</b><em>Resolución en &lt; 24 horas hábiles</em></div>
+                        <p><strong>Actores:</strong> Co-Gerente Informático y Co-Gerente de Auditoría Médica.</p>
+                        <p><strong>Alcance:</strong> discrepancias en codificación de reglas, ajustes de sintaxis
+                            SQL/Python, ambigüedad en diagnósticos CIE-10 o priorización de tareas diarias.</p>
+                        <p><strong>Mecanismo:</strong> consenso técnico fundamentado en la normatividad ministerial
+                            vigente.</p>
+                    </div>
+                    <div class="esc-arrow">▼ Si no hay acuerdo en 24 horas</div>
+                    <div class="esc-level esc-2">
+                        <div class="esc-head"><span class="pill-badge badge-med">Nivel
+                                2</span><b>Interdepartamental</b><em>Resolución en &lt; 48 horas hábiles</em></div>
+                        <p><strong>Actores:</strong> Co-Gerentes de Proyecto y Jefaturas de Área (Sistemas o
+                            Facturación).</p>
+                        <p><strong>Alcance:</strong> tiempos de extracción en staging, acceso a bases históricas,
+                            inconsistencias en catálogos de tarifas o resistencia del personal de admisiones.</p>
+                        <p><strong>Mecanismo:</strong> sesión extraordinaria de concertación técnica con acta de
+                            compromiso.</p>
+                    </div>
+                    <div class="esc-arrow">▼ Si no hay acuerdo en 48 horas</div>
+                    <div class="esc-level esc-3">
+                        <div class="esc-head"><span class="pill-badge badge-high">Nivel 3</span><b>Estratégico /
+                                Contractual</b><em>Resolución en &lt; 72 horas hábiles</em></div>
+                        <p><strong>Actores:</strong> Gerencia General RETINHER (Sponsor), Co-Gerentes y Dirección Médica
+                            de la EPS.</p>
+                        <p><strong>Alcance:</strong> disputas normativas sobre exclusiones de capitación, retraso
+                            crítico en censos de la EPS, cambios regulatorios mayores o activación de reservas de costo.
+                        </p>
+                        <p><strong>Mecanismo:</strong> Comité Extraordinario de Dirección con decisión vinculante del
+                            Sponsor.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===================== 4. ROI E IMPACTO ===================== -->
+            <section id="roi" class="content-card">
+                <div class="card-header">
+                    <h2>ROI e Impacto Multidimensional</h2>
+                    <p class="text-muted">Evaluación financiera, roadmap temporal y ejes de impacto del proyecto</p>
+                </div>
+
+                <div class="text-content">
+                    <h3>Evaluación Financiera y Retorno de Inversión (ROI)</h3>
+                    <p><strong>Parámetros de entrada (línea base RETINHER IPS)</strong></p>
+                </div>
+                <div class="risk-kpis">
+                    <div class="risk-kpi risk-kpi--total"><b>$69,7 M</b><span>Inversión total (COP)</span></div>
+                    <div class="risk-kpi risk-kpi--Alto"><b>$110 – 120 M</b><span>Facturación mensual per cápita
+                            contratada (COP)</span></div>
+                    <div class="risk-kpi risk-kpi--Medio"><b>70% – 85%</b><span>Eficacia proyectada del pipeline
+                            Pre-RIPS/FEV</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>$165,5 – 205,3 M</b><span>Beneficio bruto anual en régimen
+                            (COP)</span></div>
+                </div>
+                <div class="text-content">
+                    <p>
+                        <strong>Inversión total:</strong> consolidado oficial de la Fase 2: $63.750.000 COP en 850 horas
+                        de consultoría y gerencia especializada, $2.700.000 COP en gastos directos de papelería,
+                        logística y manuales, y $3.322.500 COP de reserva de contingencia (5%) para la matriz de
+                        riesgos.
+                    </p>
+                    <p>
+                        <strong>Por qué importa la calidad del dato:</strong> RETINHER factura aproximadamente
+                        $110.000.000 a $120.000.000 COP cada mes bajo modalidad per cápita (se usa $115.000.000 como
+                        valor de referencia, es decir, unos $1.380.000.000 al año). Cuando los lotes RIPS/FEV no
+                        cumplen los estándares, la EPS retrasa el pago mensual. Ese retraso tiene dos efectos: un costo
+                        financiero medible (la IPS debe financiar con capital de trabajo el dinero que no recibe a
+                        tiempo) y un riesgo de liquidez, porque el ingreso mensual cubre nómina, proveedores y
+                        operación asistencial.
+                    </p>
+                    <p>
+                        <strong>Cartera expuesta a glosas técnicas prevenibles:</strong> $180.000.000 COP/año (cerca
+                        del 13% de la facturación anual) en retenciones y débitos de las EPS originados por causas de
+                        datos: discordancia diagnóstico vs. CUPS, datos demográficos erróneos, usuarios fuera del censo
+                        per cápita y duplicidades.
+                    </p>
+                    <p>
+                        <strong>Supuestos del modelo:</strong> costo de financiación del capital de trabajo de 2%
+                        mensual; el pago retrasado se difiere un mes completo; el ahorro operativo equivale a las
+                        horas extras de 2 analistas de facturación ($1.200.000 por analista al mes). Se presentan dos
+                        escenarios: el <em>esperado</em>, con el pipeline plenamente efectivo desde el primer mes, y el
+                        <em>realista</em>, con menor eficacia y una adopción gradual por parte de las áreas.
+                    </p>
+                </div>
+
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Concepto</th>
+                                <th>Escenario esperado</th>
+                                <th>Escenario realista</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Eficacia del pipeline</strong></td>
+                                <td>85%</td>
+                                <td>70%</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Entrada en operación</strong></td>
+                                <td>Beneficio pleno desde el mes 1</td>
+                                <td>Gradual: 30% (meses 1 a 3), 60% (meses 4 a 6) y 100% desde el mes 7</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Glosas evitadas</strong><br><span class="small-text text-muted">$180.000.000
+                                        × eficacia</span></td>
+                                <td>$153.000.000</td>
+                                <td>$126.000.000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Costo financiero evitado por pagos retrasados</strong><br><span
+                                        class="small-text text-muted">$115.000.000 × 2% × 12 meses × eficacia</span>
+                                </td>
+                                <td>$23.460.000</td>
+                                <td>$19.320.000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ahorro operativo (horas extras y reprocesos)</strong><br><span
+                                        class="small-text text-muted">$28.800.000 × factor de eficacia</span></td>
+                                <td>$28.800.000</td>
+                                <td>$20.160.000</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Beneficio bruto anual en régimen</strong></td>
+                                <td><strong>$205.260.000</strong></td>
+                                <td><strong>$165.480.000</strong></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Beneficio acumulado en los primeros 12 meses</strong></td>
+                                <td>$205.260.000</td>
+                                <td>$119.973.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Cálculo del ROI (horizonte de 12 meses)</h3>
+                </div>
+                <div class="formula formula-lg">
+                    <b>ROI</b> = ( <span class="frac"><span>Beneficio Acumulado a 12 meses − Inversión
+                            Total</span><span>Inversión Total del Proyecto</span></span> ) × 100
+                    <br><br>
+                    <b>Escenario esperado:</b> ( <span class="frac"><span>$205.260.000 −
+                            $69.772.500</span><span>$69.772.500</span></span> ) × 100 = <span
+                        class="result">194,18%</span>
+                    <br><br>
+                    <b>Escenario realista:</b> ( <span class="frac"><span>$119.973.000 −
+                            $69.772.500</span><span>$69.772.500</span></span> ) × 100 = <span
+                        class="result">71,95%</span>
+                </div>
+                <div class="text-content">
+                    <p><em>Interpretación:</em> en el escenario esperado, por cada peso invertido RETINHER recupera el
+                        capital y obtiene una ganancia neta adicional de <strong>$1,94 COP</strong> en los primeros 12
+                        meses de operación. En el escenario realista, por la menor eficacia y la adopción gradual, esa
+                        ganancia es de <strong>$0,72 COP</strong> en el primer año; a 24 meses asciende a
+                        <strong>309%</strong>, porque el beneficio ya opera a régimen completo.</p>
+                    <h3>Periodo de recuperación del capital (Payback)</h3>
+                </div>
+                <div class="formula formula-lg">
+                    <b>Escenario esperado:</b> beneficio mensual = $205.260.000 / 12 = $17.105.000 COP/mes
+                    <br>
+                    <b>Payback</b> = <span class="frac"><span>$69.772.500</span><span>$17.105.000</span></span> = <span
+                        class="result">4,1 meses</span>
+                    <br><br>
+                    <b>Escenario realista:</b> beneficio mensual en régimen = $165.480.000 / 12 = $13.790.000 COP/mes
+                    <br>
+                    Acumulado a 6 meses (30% × 3 meses + 60% × 3 meses): $37.206.000. Faltan $32.566.500, que se cubren
+                    a $13.790.000/mes en 2,4 meses adicionales.
+                    <br>
+                    <b>Payback</b> = 6 + 2,4 = <span class="result">8,4 meses</span>
+                </div>
+                <div class="text-content">
+                    <p><em>Conclusión:</em> contando desde la salida en vivo (22 de abril de 2027), la inversión se
+                        recupera entre el <strong>mes 4 (aprox. agosto de 2027)</strong> en el escenario esperado y el
+                        <strong>mes 8 o 9 (aprox. enero de 2028)</strong> en el escenario realista. Para la
+                        planeación financiera de RETINHER se recomienda tomar el escenario realista como referencia.</p>
+                    <p><em>Alcance y limitaciones:</em> las cifras son estimaciones que dependen de los supuestos
+                        indicados y deben validarse con los datos reales de glosas y de pagos de la EPS. El cálculo no
+                        descuenta el valor del dinero en el tiempo, no incluye costos de mantenimiento posteriores al
+                        cierre del proyecto y no valora el riesgo de liquidez, cuyo efecto supera el costo financiero
+                        del retraso. Dentro del rango de facturación de $110 a $120 millones, el resultado cambia poco
+                        (menos de $1,3 millones al año en el costo financiero evitado).</p>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Roadmap Temporal del Impacto Multidimensional</h3>
+                </div>
+                <div class="roadmap">
+                    <div class="rm-col">
+                        <div class="rm-title"><b>Corto plazo</b><span>Semanas 1 a 25 · Ejecución, calibración y
+                                entrega</span></div>
+                        <div class="rm-block">
+                            <h5>💰 Financiero</h5>
+                            <ul>
+                                <li>Desembolso presupuestal controlado dentro del techo de $69,7 M COP.</li>
+                                <li>Cero gasto en software comercial mediante stack Python/SQL Open Source.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>🤝 Social y humano</h5>
+                            <ul>
+                                <li>Capacitación técnica de 40 colaboradores en calidad de datos y auditoría médica.
+                                </li>
+                                <li>Menos tensiones interáreas gracias a reglas claras en el catálogo de metadatos.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>⚙️ Operativo</h5>
+                            <ul>
+                                <li>Linaje del dato 100% documentado.</li>
+                                <li>Pruebas en servidor de staging sin afectar el sistema transaccional.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rm-col">
+                        <div class="rm-title"><b>Mediano plazo</b><span>Meses 7 a 12 · Estabilización y despliegue
+                                operativo</span></div>
+                        <div class="rm-block">
+                            <h5>💰 Financiero</h5>
+                            <ul>
+                                <li>Recuperación del capital invertido en el escenario esperado (aprox. 4 meses después de la salida en vivo).</li>
+                                <li>Disminución sostenida de entre 70% y 85% en el valor de glosas y devoluciones per cápita.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>🤝 Social y humano</h5>
+                            <ul>
+                                <li>Erradicación de horas extras forzadas a fin de mes en facturación.</li>
+                                <li>Reducción del estrés laboral y prevención del síndrome de burnout.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>⚙️ Operativo</h5>
+                            <ul>
+                                <li>Reducción del 65% en el tiempo de corte y preparación mensual de paquetes RIPS.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="rm-col">
+                        <div class="rm-title"><b>Largo plazo</b><span>Año 2 en adelante · Madurez analítica y
+                                escalabilidad</span></div>
+                        <div class="rm-block">
+                            <h5>💰 Financiero</h5>
+                            <ul>
+                                <li>Beneficio recurrente estimado de entre $165 M y $205 M COP anuales; recuperación del capital en el escenario realista (aprox. 8 a 9 meses después de la salida en vivo).</li>
+                                <li>Preservación permanente de la liquidez y del flujo de caja mensual.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>🤝 Social y humano</h5>
+                            <ul>
+                                <li>Cultura organizacional orientada a datos (<em>Data-Driven Culture</em>).</li>
+                                <li>Especialización del talento hacia roles de analítica e inteligencia.</li>
+                            </ul>
+                        </div>
+                        <div class="rm-block">
+                            <h5>⚙️ Operativo</h5>
+                            <ul>
+                                <li>Modelo institucional preparado para integrar algoritmos predictivos de morbilidad y
+                                    riesgo en salud.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">Ejes de Impacto</h3>
+                    <h3>A. Impacto social y calidad de vida laboral en RETINHER</h3>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🧘</div>
+                        <div class="member-details">
+                            <h4>Erradicación del burnout en cuentas médicas</h4>
+                            <p>Las semanas de cierre y radicación suelen someter a auxiliares y coordinadores a jornadas
+                                extensas y alta presión ante el temor a rechazos masivos. El pipeline sustituye la
+                                revisión manual registro por registro por alertas tempranas, convirtiendo una labor
+                                estresante en una rutina controlada y permitiendo balancear la vida laboral y personal.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-emerald">🎓</div>
+                        <div class="member-details">
+                            <h4>Cualificación y dignificación del rol administrativo</h4>
+                            <p>El personal deja de digitar, corregir y "planillear" datos en hojas de cálculo para
+                                evolucionar hacia analistas de calidad del dato (<em>Data Stewards</em>): gestión de
+                                metadatos, validación de reglas de negocio e interpretación de tableros BI.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-red">🤲</div>
+                        <div class="member-details">
+                            <h4>Armonización del clima organizacional</h4>
+                            <p>Las glosas generan señalamientos entre médicos (por omitir diagnósticos) y facturadores
+                                (por demorar cuentas). Un catálogo transparente de reglas clínicas cruzadas y
+                                validaciones objetivas elimina la subjetividad y fomenta la cooperación basada en
+                                hechos.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">💙</div>
+                        <div class="member-details">
+                            <h4>Humanización de la atención al paciente</h4>
+                            <p>Con censos depurados y sincronizados con la EPS mediante <em>Record Linkage</em> se
+                                previenen barreras injustificadas en admisión: negación errónea de citas, demora en
+                                consultas especializadas o en el despacho de medicamentos a usuarios amparados por el
+                                contrato.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-content">
+                    <h3>B. Impacto estratégico, reputacional y contractual</h3>
+                </div>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🏆</div>
+                        <div class="member-details">
+                            <h4>Posicionamiento y madurez digital ante el asegurador</h4>
+                            <p>RETINHER se posiciona ante la EPS y la Superintendencia Nacional de Salud como prestador
+                                con gobernanza de datos de nivel avanzado. Lotes con ICD del 100% y efectividad en
+                                primera radicación superior al 75% fortalecen su poder de negociación en futuros comités
+                                contractuales y convenios de desempeño per cápita.</p>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="member-avatar avatar-indigo">🔮</div>
+                        <div class="member-details">
+                            <h4>Base habilitadora para analítica predictiva</h4>
+                            <p>El proyecto dota a la IPS de un <em>data mart</em> estructurado y un catálogo
+                                estandarizado, plataforma de base para modelos de Machine Learning: carga de enfermedad,
+                                reingresos hospitalarios y gasto prospectivo en tecnologías per cápita.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
     </div>
