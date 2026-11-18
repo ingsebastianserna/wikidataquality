@@ -108,6 +108,19 @@
       "estrategia": "Mitigar",
       "preventivo": "Estandarización de una interfaz simplificada para el cargue y categorización de glosas al cierre de cada radicación mensual",
       "contingencia": "Institucionalización de un Comité Quincenal de Calidad del Dato con asistencia obligatoria de Facturación, Auditoría y Sistemas"
+    },
+    {
+      "id": "RSG-09",
+      "riesgo": "Retraso en la habilitación de accesos y diccionarios de datos por parte de TI",
+      "categoria": "Técnico / Dependencia interna",
+      "causa": "Réplica de solo lectura del HIS entregada tarde y diccionario de datos incompleto, lo que frena el análisis de esquemas y la extracción (A03)",
+      "probabilidad": 4,
+      "impacto": 3,
+      "severidad": 12,
+      "nivel": "Medio",
+      "estrategia": "Mitigar",
+      "preventivo": "Acta de requerimientos con fechas comprometidas y sesión semanal fija con la Dirección de Sistemas/TI; lista de accesos necesarios por actividad",
+      "contingencia": "Avanzar el linaje con los flujos levantados en A02 y solicitar volcados planos acordados con el DBA mientras se habilita la réplica"
     }
   ]
 }

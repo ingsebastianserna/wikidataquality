@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecución Proyecto | ESEIT - RETINHER</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo-area">
+                <!-- NUEVO: Botón Hamburguesa para Móviles -->
+                <button id="mobile-menu-btn" class="hamburger-btn">☰</button>
+
+                <div class="logo-icon">E</div>
+                <span class="logo-text">ESEIT <span class="fw-light">/ PMBOK</span></span>
+            </div>
+            <div class="nav-badges">
+                <span class="status-badge pulse">En Progreso</span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">📋 Ejecución Proyecto</h1>
+            <p class="hero-subtitle">Seguimiento semanal del plan: cronograma, calidad, comunicación, riesgos y
+                comparativo plan vs. ejecución.</p>
+        </div>
+    </header>
+
+    <div class="container layout-grid">
+        <!-- MENÚ LATERAL -->
+        <aside class="sidebar-menu">
+            <div class="menu-sticky-wrapper">
+                <h3 class="menu-title">Navegación</h3>
+                <nav class="pill-nav">
+                    <!-- SECCIÓN GENERAL -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <!-- Este enlace te lleva a la página principal -->
+                            <a href="index.html" class="section-link">General</a>
+                            <!-- Este botón solo abre/cierra -->
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="index.html#intro" class="nav-pill">Introducción</a>
+                            <a href="index.html#presentacion" class="nav-pill active">Presentación y Equipo</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 1 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase1.html" class="section-link">Fase 1: Iniciación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase1.html#acta" class="nav-pill">Acta de Constitución</a>
+                            <a href="fase1.html#asignacion" class="nav-pill">Asignación de Roles</a>
+                            <a href="fase1.html#supuestos" class="nav-pill">Supuestos y Restricciones</a>
+                            <a href="fase1.html#interesados" class="nav-pill">Análisis de Interesados</a>
+                            <a href="fase1.html#comunicacion" class="nav-pill">Matriz de Poder y Estrategias de
+                                Comunicación</a>
+                            <a href="fase1.html#vision" class="nav-pill">Visión del Proyecto</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 2 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase2.html" class="section-link">Fase 2: Planeación</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase2.html#alcance" class="nav-pill">Alcance del Proyecto</a>
+                            <a href="fase2.html#wbs" class="nav-pill">Work Breakdown Structure(WBS)</a>
+                            <a href="fase2.html#cronograma" class="nav-pill">Cronograma y Diagrama de Gantt</a>
+                            <a href="fase2.html#presupuesto" class="nav-pill">Presupuestos</a>
+                            <a href="fase2.html#matriz-riesgos" class="nav-pill">Gestión de Riesgos</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN FASE 3 -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="fase3.html" class="section-link">Fase 3: Ejecución</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="fase3.html#asignacion" class="nav-pill">Asignación de Tareas</a>
+                            <a href="fase3.html#calidad" class="nav-pill">Plan de Calidad</a>
+                            <a href="fase3.html#comunicacion" class="nav-pill">Gestión de la Comunicación</a>
+                            <a href="fase3.html#roi" class="nav-pill">ROI e Impacto</a>
+                        </div>
+                    </div>
+
+                    <!-- SECCIÓN EJECUCIÓN PROYECTO -->
+                    <div class="nav-section">
+                        <div class="section-header">
+                            <a href="ejecucion.html" class="section-link">Ejecución Proyecto</a>
+                            <button class="toggle-btn"><span class="toggle-icon">-</span></button>
+                        </div>
+                        <div class="nav-items">
+                            <a href="ejecucion.html#semana1" class="nav-pill">Semana 1</a>
+                            <a href="ejecucion.html#semana2" class="nav-pill">Semana 2</a>
+                            <a href="ejecucion.html#semana3" class="nav-pill">Semana 3</a>
+                            <a href="ejecucion.html#semana4" class="nav-pill">Semana 4</a>
+                            <a href="ejecucion.html#semana5" class="nav-pill">Semana 5</a>
+                            <a href="ejecucion.html#semana6" class="nav-pill">Semana 6</a>
+                            <a href="ejecucion.html#semana7" class="nav-pill">Semana 7</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO -->
+        <main class="content-area">
+            <section id="ejecucion" class="content-card">
+                <div class="card-header">
+                    <h2>Seguimiento Semanal de la Ejecución</h2>
+                    <p class="text-muted">Control del plan: cronograma, calidad, comunicación, riesgos y comparativo
+                        plan vs. ejecución</p>
+                </div>
+                <div class="text-content">
+                    <p>Cada semana se documentan cinco capítulos: (1) cumplimiento del cronograma, (2) control de
+                        calidad, (3) comunicación y colaboración, (4) gestión de riesgos y (5) comparativo plan vs.
+                        ejecución. Las semanas se cuentan desde el inicio del proyecto (2 de noviembre de 2026).</p>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li><strong>Avance del proyecto:</strong> se pondera por días hábiles de las 15 actividades del
+                        cronograma (155 días en total).</li>
+                    <li><strong>Presupuesto:</strong> se sigue con valor planificado, valor ganado y costo real, con los
+                        índices CPI (costo) y SPI (cronograma). La tarifa es de $75.000 por hora.</li>
+                </ul>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Semana</th>
+                                <th>Fechas</th>
+                                <th>Avance planificado</th>
+                                <th>Avance real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="#semana1">Semana 1</a></td>
+                                <td>2 al 8 de nov.</td>
+                                <td>2,6 %</td>
+                                <td>2,6 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#semana2">Semana 2</a></td>
+                                <td>9 al 15 de nov.</td>
+                                <td>5,8 %</td>
+                                <td>5,8 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#semana3">Semana 3</a></td>
+                                <td>16 al 22 de nov.</td>
+                                <td>10,3 %</td>
+                                <td>9,4 %</td>
+                                <td><span class="pill-badge badge-med">En observación</span></td>
+                            </tr>
+                            <!-- <tr>
+                                <td><a href="#semana4">Semana 4</a></td>
+                                <td>23 al 29 de nov.</td>
+                                <td>16,8 %</td>
+                                <td>14,2 %</td>
+                                <td><span class="pill-badge badge-medhigh">Con desviación</span></td>
+                            </tr> -->
+                            <tr>
+                                <td><a href="#semana4">Semana 4</a></td>
+                                <td>23 al 29 de nov.</td>
+                                <td>16,8 %</td>
+                                <td>—</td>
+                                <td><span class="pill-badge badge-null">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#semana5">Semana 5</a></td>
+                                <td>30 de nov. al 6 de dic.</td>
+                                <td>21,3 %</td>
+                                <td>—</td>
+                                <td><span class="pill-badge badge-null">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#semana6">Semana 6</a></td>
+                                <td>7 al 13 de dic.</td>
+                                <td>23,9 %</td>
+                                <td>—</td>
+                                <td><span class="pill-badge badge-null">Pendiente</span></td>
+                            </tr>
+                            <tr>
+                                <td><a href="#semana7">Semana 7</a></td>
+                                <td>14 al 20 de dic.</td>
+                                <td>27,1 %</td>
+                                <td>—</td>
+                                <td><span class="pill-badge badge-null">Pendiente</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section id="semana1" class="content-card">
+                <div class="card-header">
+                    <h2>Semana 1</h2>
+                    <p class="text-muted">2 al 8 de noviembre de 2026 · En plan</p>
+                </div>
+                <div class="risk-kpis">
+                    <div class="risk-kpi risk-kpi--total"><b>2,6 %</b><span>Avance planificado del proyecto</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>2,6 %</b><span>Avance real del proyecto</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>0</b><span>Retrasos o desviaciones</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>En plan</b><span>Estado de la semana</span></div>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">1. Cumplimiento del cronograma</h3>
+                </div>
+                <div class="text-content">
+                    <p>El lunes 2 de noviembre fue festivo y ya estaba descontado del calendario oficial, de modo que el
+                        trabajo efectivo inició el martes 3 con la actividad A01 (formalización del Project Charter,
+                        constitución del equipo y análisis de interesados).</p>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Responsable</th>
+                                <th>Avance planificado</th>
+                                <th>Avance real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A01 · Charter, equipo e interesados</td>
+                                <td>Co-Gerentes</td>
+                                <td>40 % (4 de 10 días hábiles)</td>
+                                <td>40 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li>Se constituyó el equipo de coliderazgo (Líder de Analítica e Ingeniería de Datos y Líder de
+                        Auditoría Médica y Procesos Clínicos).</li>
+                    <li>Se redactó el borrador del Acta de Constitución: contexto del problema, objetivo general, siete
+                        objetivos específicos y los siete entregables.</li>
+                    <li>No hay retrasos acumulados ni tareas fuera de secuencia.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">2. Control de calidad</h3>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li>El Plan de Calidad todavía se estaba definiendo; las compuertas de calidad del dato no aplican
+                        en esta etapa porque se miden sobre lotes RIPS/FEV.</li>
+                    <li>Se revisó el borrador del acta contra la lista de contenidos mínimos del estándar PMBOK
+                        (contexto, objetivos, entregables, supuestos y restricciones). Resultado: completo en
+                        estructura; pendiente afinar la redacción de algunos objetivos.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">3. Comunicación y colaboración</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Evento</th>
+                                <th>Fecha</th>
+                                <th>Estado y registro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sincronización técnica (lunes, miércoles y viernes)</td>
+                                <td>4 y 6 de nov. (el lunes 2 fue festivo)</td>
+                                <td>2 de 2 realizadas, con minuta</td>
+                            </tr>
+                            <tr>
+                                <td>Wiki</td>
+                                <td>6 de nov.</td>
+                                <td>Publicados el inicio y el borrador de Fase 1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Participación:</strong> ambos líderes asistieron al 100 % de las sincronizaciones y se
+                        repartieron la redacción del acta (Analítica: contexto técnico y entregables; Auditoría Médica:
+                        contexto asistencial y riesgos).</p>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">4. Gestión de riesgos</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Riesgo</th>
+                                <th>Estado</th>
+                                <th>Acción / seguimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RSG-04 · Ventana de feriados</td>
+                                <td>En control</td>
+                                <td>Los festivos ya están descontados del cronograma; el del 2 de nov. no generó
+                                    impacto.</td>
+                            </tr>
+                            <tr>
+                                <td>Resto de la matriz (8 riesgos)</td>
+                                <td>Sin incidentes</td>
+                                <td>Monitoreo inicial; no se requiere actualizar la matriz.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">5. Comparativo plan vs. ejecución</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Plan</th>
+                                <th>Real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WBS 1.1 · Gestión y dirección</td>
+                                <td>Charter en elaboración</td>
+                                <td>Borrador del acta elaborado</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cronograma</td>
+                                <td>A01 al 40 %</td>
+                                <td>A01 al 40 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>Presupuesto, paquete 1.1 (acumulado)</td>
+                                <td>4 h · $300.000</td>
+                                <td>4 h · $300.000</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Desviaciones detectadas:</strong> ninguna.</p>
+                </div>
+            </section>
+            <section id="semana2" class="content-card">
+                <div class="card-header">
+                    <h2>Semana 2</h2>
+                    <p class="text-muted">9 al 15 de noviembre de 2026 · En plan</p>
+                </div>
+                <div class="risk-kpis">
+                    <div class="risk-kpi risk-kpi--total"><b>5,8 %</b><span>Avance planificado del proyecto</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>5,8 %</b><span>Avance real del proyecto</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>0</b><span>Retrasos o desviaciones</span></div>
+                    <div class="risk-kpi risk-kpi--Bajo"><b>En plan</b><span>Estado de la semana</span></div>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">1. Cumplimiento del cronograma</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Responsable</th>
+                                <th>Avance planificado</th>
+                                <th>Avance real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A01 · Charter, equipo e interesados</td>
+                                <td>Co-Gerentes</td>
+                                <td>90 % (9 de 10 días hábiles)</td>
+                                <td>90 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li>Se completaron el análisis de interesados, la matriz poder-interés, los supuestos y
+                        restricciones, la asignación de roles y la visión del proyecto.</li>
+                    <li>Se preparó el cierre del acta para su aprobación el martes 17 (el lunes 16 es festivo).</li>
+                    <li>Sin retrasos ni tareas fuera de secuencia.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">2. Control de calidad</h3>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li>Se revisó la coherencia entre el acta, el análisis de interesados y la tabla de roles. Hallazgo:
+                        la matriz poder-interés estaba como plantilla vacía; se rehízo ubicando a cada interesado en su
+                        cuadrante.</li>
+                    <li>Se verificó el formato del borrador (títulos, numeración y tablas) y se unificaron los nombres
+                        de los roles.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">3. Comunicación y colaboración</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Evento</th>
+                                <th>Fecha</th>
+                                <th>Estado y registro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sincronización técnica</td>
+                                <td>9, 11 y 13 de nov.</td>
+                                <td>3 de 3 realizadas, con minuta</td>
+                            </tr>
+                            <tr>
+                                <td>Comité de Dirección y Seguimiento (quincenal)</td>
+                                <td>12 de nov.</td>
+                                <td>Primer comité con acta firmada; se presentó el borrador del Acta de Constitución
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Mesa técnica con la EPS (primeros 5 días hábiles del mes)</td>
+                                <td>9 de nov.</td>
+                                <td>Realizada; se presentó el proyecto, se solicitó el acuerdo de intercambio seguro de
+                                    datos y una muestra de la base de afiliados (corte de noviembre) para el 20 de nov.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sesión con TI</td>
+                                <td>11 de nov.</td>
+                                <td>Primera sesión; TI se comprometió verbalmente a habilitar la réplica de solo lectura
+                                    del HIS el 18 de nov. (sin comunicado oficial por escrito)</td>
+                            </tr>
+                            <tr>
+                                <td>Taller con Facturación</td>
+                                <td>13 de nov.</td>
+                                <td>Realizado; se identificaron los tipos de glosa más frecuentes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Participación:</strong> asistencia completa de ambos líderes. La Gerencia General
+                        respondió los comentarios al borrador del acta en dos días.</p>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">4. Gestión de riesgos</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Riesgo</th>
+                                <th>Estado</th>
+                                <th>Acción / seguimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RSG-03 · Retraso de la base de afiliados de la EPS</td>
+                                <td>En vigilancia</td>
+                                <td>Se envió la solicitud del acuerdo de intercambio con SLA de entrega en los primeros
+                                    3 días del mes.</td>
+                            </tr>
+                            <tr>
+                                <td>RSG-06 · Confidencialidad de datos de salud</td>
+                                <td>En control</td>
+                                <td>Borrador del protocolo de anonimización (hashing SHA-256 y enmascaramiento) listo
+                                    para aprobación.</td>
+                            </tr>
+                            <tr>
+                                <td>RSG-01 · Degradación del HIS</td>
+                                <td>En control</td>
+                                <td>Se acordó extraer solo desde una réplica de solo lectura, en horario nocturno.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Actualización de la matriz:</strong> no fue necesaria; no hubo incidentes.</p>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">5. Comparativo plan vs. ejecución</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Plan</th>
+                                <th>Real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WBS 1.1 · Gestión y dirección</td>
+                                <td>Interesados, roles y visión</td>
+                                <td>Completados</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>Cronograma</td>
+                                <td>A01 al 90 %</td>
+                                <td>A01 al 90 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>Presupuesto, paquete 1.1 (acumulado)</td>
+                                <td>8 h · $600.000</td>
+                                <td>8 h · $600.000</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Desviaciones detectadas:</strong> ninguna.</p>
+                </div>
+            </section>
+            <section id="semana3" class="content-card">
+                <div class="card-header">
+                    <h2>Semana 3</h2>
+                    <p class="text-muted">16 al 22 de noviembre de 2026 · En observación</p>
+                </div>
+                <div class="risk-kpis">
+                    <div class="risk-kpi risk-kpi--total"><b>10,3 %</b><span>Avance planificado del proyecto</span>
+                    </div>
+                    <div class="risk-kpi risk-kpi--Medio"><b>9,4 %</b><span>Avance real del proyecto</span></div>
+                    <div class="risk-kpi risk-kpi--Medio"><b>1</b><span>Alerta temprana (A03)</span></div>
+                    <div class="risk-kpi risk-kpi--Medio"><b>En observación</b><span>Estado de la semana</span></div>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">1. Cumplimiento del cronograma</h3>
+                </div>
+                <div class="text-content">
+                    <p>El lunes 16 fue festivo. A01 cerró el martes 17 con la aprobación del acta (hito H1) y el
+                        miércoles 18 arrancaron en paralelo A02 y A03.</p>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Actividad</th>
+                                <th>Responsable</th>
+                                <th>Avance planificado</th>
+                                <th>Avance real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>A01 · Charter, equipo e interesados</td>
+                                <td>Co-Gerentes</td>
+                                <td>100 %</td>
+                                <td>100 %</td>
+                                <td><span class="pill-badge badge-low">Completada</span></td>
+                            </tr>
+                            <tr>
+                                <td>H1 · Acta de Constitución aprobada</td>
+                                <td>Gerencia General</td>
+                                <td>17 de nov.</td>
+                                <td>17 de nov.</td>
+                                <td><span class="pill-badge badge-low">Completada</span></td>
+                            </tr>
+                            <tr>
+                                <td>A02 · Relevamiento de procesos clínicos y de admisión</td>
+                                <td>Auditoría Médica</td>
+                                <td>30 % (3 de 10 días)</td>
+                                <td>30 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>A03 · Esquemas y extracción de bases HIS/ERP</td>
+                                <td>Analítica</td>
+                                <td>30 % (3 de 10 días)</td>
+                                <td>15 %</td>
+                                <td><span class="pill-badge badge-med">En observación</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li><strong>Alerta temprana:</strong> aún no existe un comunicado oficial de TI sobre la entrega de
+                        la réplica de solo lectura del HIS, que se había comprometido verbalmente para el 18 de nov. Sin
+                        la réplica no se puede extraer información, así que A03 arrancó solo con el análisis documental
+                        de los diccionarios de datos existentes.</li>
+                    <li>El bloqueo se registró en la sincronización del viernes 20. No hay tareas fuera de secuencia.
+                    </li>
+                    <li>Causa preliminar: coordinación con TI (compromiso verbal, sin comunicado oficial). Se escala la
+                        semana siguiente si no se resuelve.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">2. Control de calidad</h3>
+                </div>
+                <ul style="margin:.25rem 0 1rem 1.25rem">
+                    <li>Revisión final del acta: coherencia con la WBS y el cronograma, formato y documentación. Se
+                        corrigieron erratas de redacción y de nombres.</li>
+                    <li>Se aprobó el protocolo de anonimización (hashing SHA-256, enmascaramiento y control de acceso
+                        por roles) que se aplicará a toda extracción de A03.</li>
+                    <li>El diccionario de datos disponible se contrastó con el esquema esperado del HIS: cubre
+                        aproximadamente el 60 % de las tablas.</li>
+                </ul>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">3. Comunicación y colaboración</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Evento</th>
+                                <th>Fecha</th>
+                                <th>Estado y registro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sincronización técnica</td>
+                                <td>18 y 20 de nov. (el lunes 16 fue festivo)</td>
+                                <td>2 de 2 realizadas; la del 20 registró el bloqueo con TI</td>
+                            </tr>
+                            <tr>
+                                <td>Reporte de Hito Mayor (semana 3)</td>
+                                <td>17 de nov.</td>
+                                <td>Publicado en la wiki junto con el acta de aprobación firmada por la Gerencia General
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sesión semanal con TI</td>
+                                <td>19 de nov.</td>
+                                <td>TI no asistió; se reprogramó</td>
+                            </tr>
+                            <tr>
+                                <td>Solicitud formal a TI (correo a la Dirección de Sistemas)</td>
+                                <td>20 de nov.</td>
+                                <td>Se pidió el comunicado oficial con la fecha de entrega de la réplica; sin respuesta
+                                    al cierre de la semana</td>
+                            </tr>
+                            <tr>
+                                <td>Taller semanal con Facturación</td>
+                                <td>19 de nov.</td>
+                                <td>Realizado; validación de reglas de negocio iniciales</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p><strong>Participación:</strong> asistencia completa de ambos líderes. Participación de TI parcial
+                        esta semana.</p>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">4. Gestión de riesgos</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Riesgo</th>
+                                <th>Estado</th>
+                                <th>Acción / seguimiento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>RSG-01 · Degradación del HIS</td>
+                                <td>En control</td>
+                                <td>Sigue vigente la regla de extraer solo desde la réplica; la demora de acceso la hace
+                                    más relevante.</td>
+                            </tr>
+                            <tr>
+                                <td>RSG-03 · Retraso de la base de afiliados de la EPS</td>
+                                <td>En vigilancia</td>
+                                <td>Se hizo seguimiento a la muestra solicitada para el 20 de nov.; la EPS aún no ha
+                                    confirmado oficialmente la fecha de entrega.</td>
+                            </tr>
+                            <tr>
+                                <td>RSG-06 · Confidencialidad</td>
+                                <td>En control</td>
+                                <td>Protocolo de anonimización aprobado.</td>
+                            </tr>
+                            <tr>
+                                <td>Dependencia de TI (alerta)</td>
+                                <td>En observación</td>
+                                <td>Aún no se registra como riesgo; se evaluará su inclusión en la matriz si se
+                                    materializa.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <h3 class="gantt-subtitle">5. Comparativo plan vs. ejecución</h3>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Elemento</th>
+                                <th>Plan</th>
+                                <th>Real</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>WBS 1.1 · Gestión y dirección</td>
+                                <td>Acta aprobada</td>
+                                <td>Acta aprobada</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>WBS 1.2.1 · Relevamiento (A02)</td>
+                                <td>30 %</td>
+                                <td>30 %</td>
+                                <td><span class="pill-badge badge-low">En plan</span></td>
+                            </tr>
+                            <tr>
+                                <td>WBS 1.2.2 · Esquemas y extracción (A03)</td>
+                                <td>30 %</td>
+                                <td>15 %</td>
+                                <td><span class="pill-badge badge-med">En observación</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-container">
+                    <table class="modern-table">
+                        <thead>
+                            <tr>
+                                <th>Presupuesto</th>
+                                <th>Valor planificado</th>
+                                <th>Valor ganado</th>
+                                <th>Costo real</th>
+                                <th>Índices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Paquete 1.1 (acumulado)</td>
+                                <td>$900.000 (12 h)</td>
+                                <td>$900.000</td>
+                                <td>$900.000 (12 h)</td>
+                                <td>CPI 1,00 · SPI 1,00</td>
+                            </tr>
+                            <tr>
+                                <td>Paquete 1.2 ($9.000.000, 120 h)</td>
+                                <td>$2.160.000 (28,8 h)</td>
+                                <td>$1.620.000 (18 %)</td>
+                                <td>$2.175.000 (29 h)</td>
+                                <td>CPI 0,74 · SPI 0,75</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="text-content">
+                    <p>Nota: el valor ganado de A02 y A03 corresponde a 4,5 de 25 días-actividad del paquete 1.2 (18 %).
+                        <strong>Desviación:</strong> A03 con 15 puntos de retraso. <strong>Acción:</strong> escalar a
+                        nivel 1 el lunes 23 si TI no emite el comunicado oficial.</p>
+                </div>
+            </section>
+            <!--  <section id="semana4" class="content-card">
+<div class="card-header"><h2>Semana 4</h2><p class="text-muted">23 al 29 de noviembre de 2026 · Con desviación</p></div>
+<div class="risk-kpis"><div class="risk-kpi risk-kpi--total"><b>16,8 %</b><span>Avance planificado del proyecto</span></div><div class="risk-kpi risk-kpi--Medio"><b>14,2 %</b><span>Avance real del proyecto</span></div><div class="risk-kpi risk-kpi--Alto"><b>2</b><span>Contratiempos (TI y base de la EPS)</span></div><div class="risk-kpi risk-kpi--Medio"><b>Con desviación</b><span>Estado de la semana</span></div></div>
+<div class="text-content"><h3 class="gantt-subtitle">1. Cumplimiento del cronograma</h3></div>
+<div class="text-content"><p><strong>Contratiempos de la semana</strong></p></div>
+<ul style="margin:.25rem 0 1rem 1.25rem"><li><strong>Aún no existe un comunicado oficial de TI sobre la entrega de la réplica de solo lectura del HIS</strong>, comprometida verbalmente para el 18 de nov. Sin la réplica no se pueden extraer datos, y el diccionario de datos disponible cubre solo cerca del 60 % de las tablas.</li><li><strong>La EPS aún no entrega la muestra de la base de afiliados (corte de noviembre)</strong>, solicitada para el 20 de nov. No hay confirmación oficial de la fecha; la EPS informó verbalmente que llegaría el 1 de dic., junto con la base de diciembre. El impacto es leve: la muestra solo se necesita para perfilar el censo dentro de A03, y la conciliación completa (A08) empieza el 24 de dic.</li></ul>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Actividad</th><th>Responsable</th><th>Avance planificado</th><th>Avance real</th><th>Estado</th></tr></thead><tbody><tr><td>A01 · Charter, equipo e interesados</td><td>Co-Gerentes</td><td>100 %</td><td>100 %</td><td><span class="pill-badge badge-low">Completada</span></td></tr><tr><td>A02 · Relevamiento de procesos clínicos y de admisión</td><td>Auditoría Médica</td><td>80 %</td><td>80 %</td><td><span class="pill-badge badge-low">En plan</span></td></tr><tr><td>A03 · Esquemas y extracción de bases HIS/ERP</td><td>Analítica</td><td>80 %</td><td>40 %</td><td><span class="pill-badge badge-high">Atraso</span></td></tr><tr><td>A04 · Mapa de Linaje del Dato (Entregable 1)</td><td>Analítica</td><td>0 %</td><td>0 %</td><td>Por iniciar el 2 de dic.</td></tr></tbody></table></div>
+<ul style="margin:.25rem 0 1rem 1.25rem"><li><strong>Retraso acumulado:</strong> A03 va 40 puntos por debajo (equivalente a unos 4 días hábiles). No podrá cerrar el 1 de dic. y su nueva fecha depende de que se habilite la réplica.</li><li><strong>Fuera de secuencia:</strong> A04 arrancará el 2 de dic. con los flujos de A02 y el análisis documental de A03, sin esperar la extracción de datos.</li></ul>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Causa del retraso de A03</th><th>Categoría</th><th>Efecto estimado</th></tr></thead><tbody><tr><td>Réplica del HIS sin comunicado oficial de entrega (compromiso verbal); no se pueden extraer datos</td><td>Coordinación (TI)</td><td>≈ 3 días hábiles</td></tr><tr><td>Diccionario de datos incompleto; hay que inferir esquemas</td><td>Recursos</td><td>≈ 0,5 días hábiles</td></tr><tr><td>Muestra de la base de afiliados pendiente de entrega (solicitada para el 20 de nov.), sin confirmación oficial de la fecha</td><td>Coordinación (EPS)</td><td>≈ 0,5 días hábiles</td></tr></tbody></table></div>
+<div class="text-content"><h3 class="gantt-subtitle">2. Control de calidad</h3></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Criterio del Plan de Calidad</th><th>Aplicación en la semana</th><th>Resultado</th></tr></thead><tbody><tr><td>Calidad en el origen y privacidad (Ley 1581)</td><td>Protocolo de anonimización aprobado y listo; aún no hay extracción del HIS (falta la réplica) ni muestra de la EPS</td><td>Pendiente de aplicar cuando lleguen los datos</td></tr><tr><td>Completitud y conformidad de los datos de entrada</td><td>La muestra de la EPS aún no llega; se prepara el perfilamiento (delimitadores, formatos de fecha, llaves y duplicados)</td><td><span class="pill-badge badge-med">En observación</span> Se aplicará al recibirla</td></tr><tr><td>Revisión de entregables de A02 (coherencia, formato, documentación)</td><td>Revisión de los flujos de admisión y facturación levantados</td><td>3 observaciones menores: nomenclatura de procesos no uniforme, documento sin control de versiones y un flujo sin responsable del punto de control. Se corrigen antes del 1 de dic.</td></tr><tr><td>Compuertas de calidad 1 a 6 (ICD, TCS, TFP, PCC, TAPR, IAMC)</td><td>No aplican todavía: se miden sobre lotes RIPS/FEV a partir de A10 y A11</td><td>—</td></tr></tbody></table></div>
+<div class="text-content"><p>El Entregable 1 (linaje del dato) aún no inicia, por lo que no hay revisión de entregable en esta etapa.</p></div>
+<div class="text-content"><h3 class="gantt-subtitle">3. Comunicación y colaboración</h3></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Evento</th><th>Fecha</th><th>Estado y registro</th></tr></thead><tbody><tr><td>Sincronización técnica (lunes, miércoles y viernes)</td><td>23, 25 y 27 de nov.</td><td>3 de 3 realizadas, con minuta</td></tr><tr><td>Comité de Dirección y Seguimiento (quincenal)</td><td>26 de nov.</td><td>Realizado, con acta firmada; se informaron los contratiempos y se acordó escalar a nivel 3 (Gerencia General) si no hay comunicado oficial de TI el 30 de nov.</td></tr><tr><td>Escalamiento nivel 1 (técnico)</td><td>23 de nov.</td><td>Sin solución en 24 h porque la dependencia era de TI</td></tr><tr><td>Escalamiento nivel 2 (interdepartamental)</td><td>24 de nov.</td><td>Sesión extraordinaria con la Jefatura de Sistemas: TI indicó que la solicitud está en trámite. Se pidió el comunicado oficial por escrito; sin respuesta al cierre de la semana</td></tr><tr><td>Taller con Facturación</td><td>25 de nov.</td><td>Realizado; validación de reglas de negocio</td></tr><tr><td>Mesa de Trabajo Asistencial y Admisiones (quincenal)</td><td>27 de nov.</td><td>Realizada; validación de los flujos de admisión de A02</td></tr><tr><td>Wiki</td><td>27 de nov.</td><td>Subsección de la semana 4 publicada</td></tr></tbody></table></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Integrante / contraparte</th><th>Participación en la semana</th></tr></thead><tbody><tr><td>Sebastián Serna Valencia (Líder de Analítica e Ingeniería de Datos)</td><td>Asistencia completa; gestionó la solicitud de la réplica con TI y preparó el perfilamiento de las muestras</td></tr><tr><td>Julián Patrón Avilés (Líder de Auditoría Médica y Procesos Clínicos)</td><td>Asistencia completa; lideró A02 y la convocatoria del escalamiento a nivel 2</td></tr><tr><td>TI (Dirección de Sistemas)</td><td>Participó en la sesión extraordinaria del 24 de nov.; la semana anterior no asistió a su sesión y aún no emite el comunicado oficial</td></tr><tr><td>Facturación</td><td>Participación normal</td></tr><tr><td>Auditoría Médica EPS</td><td>Muestra de afiliados pendiente; sin confirmación oficial de la fecha de entrega</td></tr></tbody></table></div>
+<div class="text-content"><h3 class="gantt-subtitle">4. Gestión de riesgos</h3></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Riesgo</th><th>Estado</th><th>Acción / seguimiento</th></tr></thead><tbody><tr><td>RSG-01 · Degradación del HIS</td><td>En control</td><td>Extracciones solo desde la réplica y en horario nocturno; todavía no hay extracciones.</td></tr><tr><td>RSG-03 · Retraso de la base de afiliados de la EPS (16, Alto)</td><td>Materializado levemente</td><td>La muestra solicitada para el 20 de nov. aún no llega. Se pidió confirmación escrita de la fecha de entrega y de la base de diciembre (1 al 3 de dic.), y se sigue el acuerdo de intercambio con SLA.</td></tr><tr><td>RSG-04 · Ventana de feriados</td><td>En planificación</td><td>Se inició el plan de trabajo autónomo para el 24 de dic. al 11 de ene.</td></tr><tr><td>RSG-06 · Confidencialidad</td><td>En control</td><td>Anonimización aplicada.</td></tr><tr><td><strong>RSG-09 (nuevo)</strong> · Retraso en habilitación de accesos y diccionarios de datos por parte de TI</td><td>Materializado · 12 (Medio)</td><td>Probabilidad 4 × Impacto 3. Preventivo: acta de requerimientos con fechas y sesión semanal con TI. Contingencia activada: el linaje avanza con los flujos de A02 y los diccionarios disponibles, y se solicitó al DBA un volcado plano parcial (sin respuesta aún).</td></tr></tbody></table></div>
+<div class="text-content"><p><strong>Actualización de la matriz:</strong> se agregó RSG-09, de modo que la matriz pasa a 9 riesgos (ver <a href="fase2.html#matriz-riesgos">Gestión de Riesgos</a>). <strong>Reserva de contingencia:</strong> no se utiliza. Aunque RSG-03 está en nivel Alto, el retraso es leve y no amenaza la fecha límite del 22 de abril de 2027 ni exige horas extras. Si la réplica no se habilita antes del 4 de dic., se reevaluará la severidad de RSG-09 y la necesidad de usar la reserva.</p></div>
+<div class="text-content"><h3 class="gantt-subtitle">5. Comparativo plan vs. ejecución</h3></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Elemento</th><th>Plan</th><th>Real</th><th>Estado</th></tr></thead><tbody><tr><td>WBS 1.1 · Gestión y dirección</td><td>En plan</td><td>En plan</td><td><span class="pill-badge badge-low">En plan</span></td></tr><tr><td>WBS 1.2.1 · Relevamiento (A02)</td><td>80 %</td><td>80 %</td><td><span class="pill-badge badge-low">En plan</span></td></tr><tr><td>WBS 1.2.2 · Esquemas y extracción (A03)</td><td>80 %</td><td>40 %</td><td><span class="pill-badge badge-high">Atraso</span></td></tr><tr><td>WBS 1.2.3 · Linaje del dato (A04)</td><td>Inicia el 2 de dic.</td><td>Por iniciar</td><td>Condicionado a A03</td></tr><tr><td>Hito H2 · Linaje validado</td><td>9 de dic.</td><td>9 de dic. (en riesgo)</td><td><span class="pill-badge badge-med">En observación</span></td></tr></tbody></table></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Presupuesto</th><th>Valor planificado</th><th>Valor ganado</th><th>Costo real</th><th>Índices</th></tr></thead><tbody><tr><td>Paquete 1.1 (acumulado)</td><td>$1.200.000 (16 h)</td><td>$1.200.000</td><td>$1.200.000 (16 h)</td><td>CPI 1,00 · SPI 1,00</td></tr><tr><td>Paquete 1.2 ($9.000.000, 120 h)</td><td>$5.760.000 (64 %)</td><td>$4.320.000 (48 %)</td><td>$4.875.000 (65 h)</td><td>CPI 0,89 · SPI 0,75</td></tr></tbody></table></div>
+<div class="text-content"><p><strong>Desviaciones detectadas y acciones correctivas</strong></p></div>
+<div class="table-container"><table class="modern-table"><thead><tr><th>Desviación</th><th>Acción correctiva</th><th>Responsable</th><th>Fecha</th></tr></thead><tbody><tr><td>A03 con 40 puntos de retraso (≈ 4 días hábiles)</td><td>Fast-tracking: A04 arranca el 2 de dic. con los flujos de A02 y el análisis documental de A03; la extracción se completa cuando se habilite la réplica</td><td>Líder de Analítica</td><td>2 de dic.</td></tr><tr><td>Falta de comunicado oficial de TI (RSG-09)</td><td>Solicitud formal por escrito a la Dirección de Sistemas con plazo al 30 de nov.; si no hay respuesta, escalar a nivel 3 con la Gerencia General. Sesión semanal fija con TI y acta de requerimientos con fechas</td><td>Co-Gerentes</td><td>30 de nov.</td></tr><tr><td>Muestra y base de la EPS pendientes (RSG-03)</td><td>Confirmación escrita de la fecha de entrega de la muestra y de la base de diciembre, seguimiento al acuerdo de intercambio y lector tolerante a formatos para cuando lleguen</td><td>Líder de Auditoría Médica y Líder de Analítica</td><td>1 al 3 de dic.</td></tr><tr><td>Observaciones en los flujos de A02</td><td>Corregir las 3 observaciones de nomenclatura, versión y responsable</td><td>Líder de Auditoría Médica</td><td>1 de dic.</td></tr><tr><td>H2 en riesgo</td><td>Punto de decisión: si no hay réplica, el linaje se valida con alcance documental (y se verifica con datos cuando se habilite) o H2 pasa del 9 al 11 de dic.</td><td>Co-Gerentes</td><td>4 de dic.</td></tr></tbody></table></div>
+<div class="text-content"><p><strong>Por qué se acelera:</strong> si el atraso no se recupera, se propaga por la cadena crítica (A04, A05, A06, A07, A09 y A10) hasta la entrega final.</p></div>
+</section>
+<section id="semana5" class="content-card">
+<div class="card-header"><h2>Semana 5</h2><p class="text-muted">30 de noviembre al 6 de diciembre de 2026 · Pendiente</p></div>
+<div class="risk-kpis"><div class="risk-kpi risk-kpi--total"><b>21,3 %</b><span>Avance planificado acumulado</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Avance real</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Desviaciones</span></div><div class="risk-kpi risk-kpi--total"><b>Pendiente</b><span>Estado de la semana</span></div></div>
+<div class="text-content"><p><strong>Lo planificado según el cronograma</strong></p></div>
+<ul style="margin:.25rem 0 1rem 1.25rem"><li>A02 y A03 cierran el 1 de dic. (A03 no cerrará en esa fecha mientras no exista la réplica).</li><li>A04 (linaje del dato) inicia el 2 de dic.</li><li>Mesa técnica mensual con la EPS (1 al 7 de dic.) y llegada de la base de afiliados de diciembre (1 al 3 de dic.).</li></ul>
+<div class="text-content"><p>Los cinco capítulos de seguimiento (cronograma, calidad, comunicación, riesgos y comparativo plan vs. ejecución) se documentan al cierre de la semana.</p></div>
+</section>
+<section id="semana6" class="content-card">
+<div class="card-header"><h2>Semana 6</h2><p class="text-muted">7 al 13 de diciembre de 2026 · Pendiente</p></div>
+<div class="risk-kpis"><div class="risk-kpi risk-kpi--total"><b>23,9 %</b><span>Avance planificado acumulado</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Avance real</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Desviaciones</span></div><div class="risk-kpi risk-kpi--total"><b>Pendiente</b><span>Estado de la semana</span></div></div>
+<div class="text-content"><p><strong>Lo planificado según el cronograma</strong></p></div>
+<ul style="margin:.25rem 0 1rem 1.25rem"><li>A04 termina el 9 de dic. (el 8 es festivo) y se cumple el hito H2: linaje validado.</li><li>A05 (riesgos de calidad bajo DAMA-DMBOK) inicia el 10 de dic.</li><li>Reporte de Hito Mayor de la semana 6.</li></ul>
+<div class="text-content"><p>Los cinco capítulos de seguimiento (cronograma, calidad, comunicación, riesgos y comparativo plan vs. ejecución) se documentan al cierre de la semana.</p></div>
+</section>
+<section id="semana7" class="content-card">
+<div class="card-header"><h2>Semana 7</h2><p class="text-muted">14 al 20 de diciembre de 2026 · Pendiente</p></div>
+<div class="risk-kpis"><div class="risk-kpi risk-kpi--total"><b>27,1 %</b><span>Avance planificado acumulado</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Avance real</span></div><div class="risk-kpi risk-kpi--total"><b>—</b><span>Desviaciones</span></div><div class="risk-kpi risk-kpi--total"><b>Pendiente</b><span>Estado de la semana</span></div></div>
+<div class="text-content"><p><strong>Lo planificado según el cronograma</strong></p></div>
+<ul style="margin:.25rem 0 1rem 1.25rem"><li>A05 termina el 16 de dic.</li><li>A06 (Matriz de Riesgos y Controles, Entregable 2) inicia el 17 de dic.</li><li>Comité de Dirección y Seguimiento quincenal.</li></ul>
+<div class="text-content"><p>Los cinco capítulos de seguimiento (cronograma, calidad, comunicación, riesgos y comparativo plan vs. ejecución) se documentan al cierre de la semana.</p></div>
+</section> -->
+        </main>
+
+    </div>
+    <script>
+        // 1. Lógica para el botón (+ / -)
+        const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+        toggleBtns.forEach(btn => {
+            btn.addEventListener('click', function (e) {
+                e.preventDefault(); // Evita cualquier comportamiento por defecto
+
+                // Busca el contenedor '.nav-items' que está justo después del '.section-header'
+                const navItems = this.closest('.section-header').nextElementSibling;
+                const icon = this.querySelector('.toggle-icon');
+
+                // Alterna la visibilidad
+                navItems.classList.toggle('collapsed');
+
+                // Cambia el ícono
+                if (navItems.classList.contains('collapsed')) {
+                    icon.textContent = '+';
+                } else {
+                    icon.textContent = '-';
+                }
+            });
+        });
+
+        // 2. Lógica para las Píldoras (Enlaces activos dentro de la misma página)
+        const navPills = document.querySelectorAll('.nav-pill');
+
+        navPills.forEach(pill => {
+            pill.addEventListener('click', function () {
+                if (!this.classList.contains('disabled')) {
+                    navPills.forEach(p => p.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // 3. Lógica para el Menú Hamburguesa en Móviles
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const sidebarMenu = document.querySelector('.sidebar-menu');
+
+        if (mobileMenuBtn && sidebarMenu) {
+            // Abrir/Cerrar menú al tocar el botón ☰
+            mobileMenuBtn.addEventListener('click', () => {
+                sidebarMenu.classList.toggle('active');
+            });
+
+            // Opcional pero recomendado: Cerrar el menú móvil automáticamente al elegir una opción
+            const allMobileLinks = document.querySelectorAll('.nav-pill, .section-link');
+            allMobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    // Solo si estamos en versión móvil (ancho menor a 900px)
+                    if (window.innerWidth <= 900) {
+                        sidebarMenu.classList.remove('active');
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
